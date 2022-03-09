@@ -1,0 +1,1351 @@
+{
+    "data": [
+        {
+            "traceID": "532de50458050082",
+            "spans": [
+                {
+                    "traceID": "532de50458050082",
+                    "spanID": "93147ffe4a1b132e",
+                    "flags": 1,
+                    "operationName": "receive:input",
+                    "references": [
+                        {
+                            "refType": "FOLLOWS_FROM",
+                            "traceID": "532de50458050082",
+                            "spanID": "32e1c8807acc2f05"
+                        }
+                    ],
+                    "startTime": 1632470994971534,
+                    "duration": 15626,
+                    "tags": [
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "spring-messaging"
+                        },
+                        {
+                            "key": "message_bus.destination",
+                            "type": "string",
+                            "value": "input"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "consumer"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [
+                        {
+                            "timestamp": 1632470994987000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "WARN"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "org.springframework.cloud.stream.binding.DispatchingStreamListenerMessageHandler"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Cannot find a @StreamListener matching for message with id: 9cc0daa7-0ecb-56a1-3e01-576cc1cfc6e2"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        }
+                    ],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "532de50458050082",
+                    "spanID": "32e1c8807acc2f05",
+                    "flags": 1,
+                    "operationName": "send:output",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "532de50458050082",
+                            "spanID": "532de50458050082"
+                        }
+                    ],
+                    "startTime": 1632470994757337,
+                    "duration": 62520,
+                    "tags": [
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "spring-messaging"
+                        },
+                        {
+                            "key": "message_bus.destination",
+                            "type": "string",
+                            "value": "output"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "producer"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [
+                        {
+                            "timestamp": 1632470994772000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "org.apache.kafka.clients.producer.ProducerConfig"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "ProducerConfig values: \r\n\tacks = 1\r\n\tbatch.size = 16384\r\n\tbootstrap.servers = [localhost:9092]\r\n\tbuffer.memory = 33554432\r\n\tclient.dns.lookup = default\r\n\tclient.id = \r\n\tcompression.type = none\r\n\tconnections.max.idle.ms = 540000\r\n\tdelivery.timeout.ms = 120000\r\n\tenable.idempotence = false\r\n\tinterceptor.classes = []\r\n\tkey.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer\r\n\tlinger.ms = 0\r\n\tmax.block.ms = 60000\r\n\tmax.in.flight.requests.per.connection = 5\r\n\tmax.request.size = 1048576\r\n\tmetadata.max.age.ms = 300000\r\n\tmetric.reporters = []\r\n\tmetrics.num.samples = 2\r\n\tmetrics.recording.level = INFO\r\n\tmetrics.sample.window.ms = 30000\r\n\tpartitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner\r\n\treceive.buffer.bytes = 32768\r\n\treconnect.backoff.max.ms = 1000\r\n\treconnect.backoff.ms = 50\r\n\trequest.timeout.ms = 30000\r\n\tretries = 0\r\n\tretry.backoff.ms = 100\r\n\tsasl.client.callback.handler.class = null\r\n\tsasl.jaas.config = null\r\n\tsasl.kerberos.kinit.cmd = /usr/bin/kinit\r\n\tsasl.kerberos.min.time.before.relogin = 60000\r\n\tsasl.kerberos.service.name = null\r\n\tsasl.kerberos.ticket.renew.jitter = 0.05\r\n\tsasl.kerberos.ticket.renew.window.factor = 0.8\r\n\tsasl.login.callback.handler.class = null\r\n\tsasl.login.class = null\r\n\tsasl.login.refresh.buffer.seconds = 300\r\n\tsasl.login.refresh.min.period.seconds = 60\r\n\tsasl.login.refresh.window.factor = 0.8\r\n\tsasl.login.refresh.window.jitter = 0.05\r\n\tsasl.mechanism = GSSAPI\r\n\tsecurity.protocol = PLAINTEXT\r\n\tsend.buffer.bytes = 131072\r\n\tssl.cipher.suites = null\r\n\tssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]\r\n\tssl.endpoint.identification.algorithm = https\r\n\tssl.key.password = null\r\n\tssl.keymanager.algorithm = SunX509\r\n\tssl.keystore.location = null\r\n\tssl.keystore.password = null\r\n\tssl.keystore.type = JKS\r\n\tssl.protocol = TLS\r\n\tssl.provider = null\r\n\tssl.secure.random.implementation = null\r\n\tssl.trustmanager.algorithm = PKIX\r\n\tssl.truststore.location = null\r\n\tssl.truststore.password = null\r\n\tssl.truststore.type = JKS\r\n\ttransaction.timeout.ms = 60000\r\n\ttransactional.id = null\r\n\tvalue.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer\r\n"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "http-nio-8091-exec-6"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470994772000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "org.apache.kafka.common.utils.AppInfoParser"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Kafka version: 2.3.1"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "http-nio-8091-exec-6"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470994772000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "org.apache.kafka.common.utils.AppInfoParser"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Kafka commitId: 18a913733fb71c01"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "http-nio-8091-exec-6"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470994772000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "org.apache.kafka.common.utils.AppInfoParser"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Kafka startTimeMs: 1632470994772"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "http-nio-8091-exec-6"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470994819000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 532de50458050082:32e1c8807acc2f05:532de50458050082:1 - send:output"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "http-nio-8091-exec-6"
+                                }
+                            ]
+                        }
+                    ],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "532de50458050082",
+                    "spanID": "532de50458050082",
+                    "flags": 1,
+                    "operationName": "placeOrder",
+                    "references": [],
+                    "startTime": 1632470994694425,
+                    "duration": 156680,
+                    "tags": [
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 200
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "java-web-servlet"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "sampler.type",
+                            "type": "string",
+                            "value": "const"
+                        },
+                        {
+                            "key": "sampler.param",
+                            "type": "bool",
+                            "value": true
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://localhost:8091/api/cart/order"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "PUT"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [
+                        {
+                            "timestamp": 1632470994694425,
+                            "fields": [
+                                {
+                                    "key": "event",
+                                    "type": "string",
+                                    "value": "preHandle"
+                                },
+                                {
+                                    "key": "handler",
+                                    "type": "string",
+                                    "value": "io.flowing.retail.checkout.rest.ShopRestController#placeOrder(String)"
+                                },
+                                {
+                                    "key": "handler.class_simple_name",
+                                    "type": "string",
+                                    "value": "ShopRestController"
+                                },
+                                {
+                                    "key": "handler.method_name",
+                                    "type": "string",
+                                    "value": "placeOrder"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470994851105,
+                            "fields": [
+                                {
+                                    "key": "event",
+                                    "type": "string",
+                                    "value": "afterCompletion"
+                                },
+                                {
+                                    "key": "handler",
+                                    "type": "string",
+                                    "value": "io.flowing.retail.checkout.rest.ShopRestController#placeOrder(String)"
+                                }
+                            ]
+                        }
+                    ],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "532de50458050082",
+                    "spanID": "4951125f6536aa9a",
+                    "flags": 1,
+                    "operationName": "receive:input",
+                    "references": [
+                        {
+                            "refType": "FOLLOWS_FROM",
+                            "traceID": "532de50458050082",
+                            "spanID": "32e1c8807acc2f05"
+                        }
+                    ],
+                    "startTime": 1632470995096992,
+                    "duration": 62926,
+                    "tags": [
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "spring-messaging"
+                        },
+                        {
+                            "key": "message_bus.destination",
+                            "type": "string",
+                            "value": "input"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "consumer"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [
+                        {
+                            "timestamp": 1632470995143000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "WARN"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "org.springframework.cloud.stream.binding.DispatchingStreamListenerMessageHandler"
+                                },
+                               {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Cannot find a @StreamListener matching for message with id: 407a4645-cebf-1b73-4a44-2fd7e4c561e1"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470995175000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 532de50458050082:4951125f6536aa9a:32e1c8807acc2f05:1 - receive:input"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        }
+                    ],
+                    "processID": "p3",
+                    "warnings": null
+                },
+                {
+                    "traceID": "532de50458050082",
+                    "spanID": "1a0ef118fcd0e9cb",
+                    "flags": 1,
+                    "operationName": "receive:input",
+                    "references": [
+                        {
+                            "refType": "FOLLOWS_FROM",
+                            "traceID": "532de50458050082",
+                            "spanID": "32e1c8807acc2f05"
+                        }
+                    ],
+                    "startTime": 1632470995034040,
+                    "duration": 379170,
+                    "tags": [
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "spring-messaging"
+                        },
+                        {
+                            "key": "message_bus.destination",
+                            "type": "string",
+                            "value": "input"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "consumer"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p4",
+                    "warnings": null
+                },
+              
+                {
+                    "traceID": "532de50458050082",
+                    "spanID": "c867d2d55923533e",
+                    "flags": 1,
+                    "operationName": "receive:input",
+                    "references": [
+                        {
+                            "refType": "FOLLOWS_FROM",
+                            "traceID": "532de50458050082",
+                            "spanID": "32e1c8807acc2f05"
+                        }
+                    ],
+                    "startTime": 1632470995175569,
+                    "duration": 31252,
+                    "tags": [
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "spring-messaging"
+                        },
+                        {
+                            "key": "message_bus.destination",
+                            "type": "string",
+                            "value": "input"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "consumer"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [
+                        {
+                            "timestamp": 1632470995191000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "WARN"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "org.springframework.cloud.stream.binding.DispatchingStreamListenerMessageHandler"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Cannot find a @StreamListener matching for message with id: dbcc4789-22b6-93a2-a440-468933eea50e"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470995206000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 532de50458050082:c867d2d55923533e:32e1c8807acc2f05:1 - receive:input"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        }
+                    ],
+                    "processID": "p5",
+                    "warnings": null
+                },
+                {
+                    "traceID": "532de50458050082",
+                    "spanID": "10a90e1c1210efae",
+                    "flags": 1,
+                    "operationName": "receive:input",
+                    "references": [
+                        {
+                            "refType": "FOLLOWS_FROM",
+                            "traceID": "532de50458050082",
+                            "spanID": "32e1c8807acc2f05"
+                        }
+                    ],
+                    "startTime": 1632470995002785,
+                    "duration": 1387942,
+                    "tags": [
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "spring-messaging"
+                        },
+                        {
+                            "key": "message_bus.destination",
+                            "type": "string",
+                            "value": "input"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "consumer"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [
+                        {
+                            "timestamp": 1632470995238000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 7243a59abff6f13b:7243a59abff6f13b:0:1 - Execute"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470995401000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 23a3a180271e5b44:23a3a180271e5b44:0:1 - Query"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470995524000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: b559784f82bb3a53:b559784f82bb3a53:0:1 - Execute"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470995531000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: c02db75a824774af:c02db75a824774af:0:1 - Execute"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470995534000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 5d325d7f9d4b05f0:5d325d7f9d4b05f0:0:1 - Execute"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470995536000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 3359da447084180a:3359da447084180a:0:1 - Execute"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470995546000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: a394c03c8f981b79:a394c03c8f981b79:0:1 - Execute"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470995964000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 72cdc1354e9f2b6:72cdc1354e9f2b6:0:1 - Execute"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470995967000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 9eb7b218cef763a4:9eb7b218cef763a4:0:1 - Execute"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470995976000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 3461e45aa6c0d6f0:3461e45aa6c0d6f0:0:1 - Execute"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470996223000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 71041b68a514d36f:71041b68a514d36f:0:1 - Batch"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470996240000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 1e6711e39d28eed1:1e6711e39d28eed1:0:1 - Batch"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470996248000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 3a23ef9724ec6930:3a23ef9724ec6930:0:1 - Batch"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470996252000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                     "key": "logger",
+                                     "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: a0b4343166bf8a58:a0b4343166bf8a58:0:1 - Batch"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470996264000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: d3aed5aef1116b7a:d3aed5aef1116b7a:0:1 - Batch"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470996266000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: af87b6a0bb44d820:af87b6a0bb44d820:0:1 - Batch"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470996271000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 61891bcfcac0cf51:61891bcfcac0cf51:0:1 - Batch"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470996284000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 5b83f962c35c848c:5b83f962c35c848c:0:1 - Batch"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470996288000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 3d691927d2922db0:3d691927d2922db0:0:1 - Batch"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470996364000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: a87ddce70f4a75a8:a87ddce70f4a75a8:0:1 - Update"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470996367000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: ba916bfa8c1da712:ba916bfa8c1da712:0:1 - Update"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470996371000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: b23c9b18a538fb5d:b23c9b18a538fb5d:0:1 - Update"
+                               },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470996373000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 9db46fd0782a69ac:9db46fd0782a69ac:0:1 - Update"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470996390000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                   "type": "string",
+                                    "value": "Span reported: 123807c1743a9e93:123807c1743a9e93:0:1 - Update"
+                                },
+                                {
+                                    "key": "thread",
+                                   "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1632470996390000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: d3c20bd6addc4bcf:d3c20bd6addc4bcf:0:1 - Update"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "KafkaConsumerDestination{consumerDestinationName='flowing-retail', partitions=1, dlqName='null'}.container-0-C-1"
+                                }
+                            ]
+                        }
+                    ],
+                    "processID": "p6",
+                    "warnings": null
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "payment",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "DESKTOP-5GTMA2D"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "100.89.70.209"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "Java-1.3.2"
+                        }
+                    ]
+                },
+                "p2": {
+                    "serviceName": "checkout",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "DESKTOP-5GTMA2D"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "100.89.70.209"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "Java-1.3.2"
+                        }
+                    ]
+                },
+                "p3": {
+                    "serviceName": "inventory",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "DESKTOP-5GTMA2D"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "100.89.70.209"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "Java-1.3.2"
+                        }
+                    ]
+                },
+                "p4": {
+                    "serviceName": "monitor",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "DESKTOP-5GTMA2D"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "100.89.70.209"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "Java-1.3.2"
+                        }
+                    ]
+                },
+                "p5": {
+                    "serviceName": "shipping",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "DESKTOP-5GTMA2D"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "100.89.70.209"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "Java-1.3.2"
+                        }
+                    ]
+                },
+                "p6": {
+                    "serviceName": "order-camunda",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "DESKTOP-5GTMA2D"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "100.89.70.209"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "Java-1.3.2"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PMX-PCM</title>
+</head>
+<body>
+<center>
+<h2>PMX-PCM Webserver</h2>
+<img src="https://se.informatik.uni-wuerzburg.de/fileadmin/_processed_/csm_PMX_logo_9cc52150f8.png" alt="">
+
+<p>The manual creation of architectural performance models is very complex,<br>
+time intense and error prone. The Performance Model eXtractor (PMX) tool<br>
+automates the extraction of architectural performance models form measurement<br>
+data. Currently, PMX supports logs of the <a href="http://kieker-monitoring.net/" title="Opens external link in new window" target="_blank" class="external-link-new-window">Kieker Monitoring Framework</a><br>as input data format.</p>
+
+<p>For more information please visit <a href="https://se.informatik.uni-wuerzburg.de/tools/pmx/">our website<a/></p>
+
+<p>
+<br>
+<br>
+	<div th:if="${message}">
+		<h2 th:text="${message}"/>
+	</div>
+	
+	<div>
+		<form method="POST" enctype="multipart/form-data" action="">
+			<table>
+				<tr><td>ZIP-File to upload:</td><td><input type="file" name="file" /></td></tr>
+				<tr><td></td><td><input type="submit" value="Analyze" /></td></tr>
+			</table>
+<tr><small>By uploading files to this web service you herby grant us the right to use, process, share and distribute the data you have provided with the general public for research purposes.</tr>
+		</form>
+	</div>
+
+</small>
+<br>
+<br>
+
+
+ <table style="width:50%">
+  <tr>
+    <td>Download some examples here:</td>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Bookstore</td>
+    <td><a href="./bookstore">download</a></td>
+  </tr>
+  <tr>
+    <td>Calculator</td>
+    <td><a href="./calculator">download</a></td>
+  </tr>
+</table> 
+<br>
+<br>
+<small>
+	For code and documentation of this service please visit
+	<a href="https://se3.informatik.uni-wuerzburg.de/descartes/pmx-pcm/tree/master/tools.descartes.pmx.pcm.docker">our Gitlab instance</a>
+
+<br>
+<br>
+
+</body>
+ <footer>
+ <center>
+  <p><small>Julius-Maximilians-Universität Würzburg</p>
+  <p><small><a href="https://se.informatik.uni-wuerzburg.de/tools/pmx/">Software Engineering:</a></p>
+  <p><small><a href="https://www.uni-wuerzburg.de/sonstiges/impressum/">Imprint + Privacy</a></p>
+</footer> 
+</html>
+
+

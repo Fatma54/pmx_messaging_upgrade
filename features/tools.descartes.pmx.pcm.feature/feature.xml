@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="tools.descartes.pmx.pcm.feature"
+      label="PMX Palladio feature"
+      version="1.0.0.qualifier">
+
+   <description>
+      PMX is a tool to automate the extraction of architectural performance models from measurements data.
+   </description>
+
+   <copyright>
+      (c) Copyright PXM contributors and others 2014-2015.  All rights
+reserved.
+This product includes software developed by other open source
+projects including the Apache Software Foundation, https://www.apache.org/.
+   </copyright>
+
+   <license url="https://www.eclipse.org/legal/epl-v10.html">
+      Unless otherwise indicated, all Content  is provided to you under the terms and conditions of the Eclipse Public License Version 1.0 (&quot;EPL&quot;). A copy of the EPL is
+provided with this Content and is also available at http://www.eclipse.org/legal/epl-v10.html.
+For purposes of the EPL, &quot;Program&quot; will mean the Content.
+   </license>
+
+   <plugin
+         id="tools.descartes.pmx"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="tools.descartes.pmx.pcm.builder"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="tools.descartes.pmx.pcm.console"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

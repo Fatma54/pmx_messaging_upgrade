@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: tools.descartes.pmx.pcm.eclipse
+Bundle-SymbolicName: tools.descartes.pmx.pcm.eclipse;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: tools.descartes.pmx.pcm.eclipse.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.ide,
+ org.eclipse.core.resources,
+ tools.descartes.pmx.console,
+ org.eclipse.ui.console,
+ tools.descartes.pmx.pcm.console
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

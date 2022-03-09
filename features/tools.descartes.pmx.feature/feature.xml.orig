@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="tools.descartes.pmx.feature"
+      label="tools.descartes.pmx Feature"
+      version="1.0.0.qualifier"
+      license-feature="tools.mdsd.license.epl2"
+      license-feature-version="1.0.0">
+
+   <requires>
+      <import feature="tools.mdsd.license.epl2"/>
+   </requires>
+
+   <plugin
+         id="tools.descartes.pmx"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

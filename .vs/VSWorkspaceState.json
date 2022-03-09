@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\tests",
+    "\\tests\\org.palladiosimulator.pmxupgrade.pcm.test",
+    "\\tests\\org.palladiosimulator.pmxupgrade.pcm.test\\resources",
+    "\\tests\\org.palladiosimulator.pmxupgrade.pcm.test\\resources\\json",
+    "\\tests\\tools.descartes.pmx.pcm.test"
+  ],
+  "SelectedNode": "\\tests\\org.palladiosimulator.pmxupgrade.pcm.test\\resources\\json\\combination4.json",
+  "PreviewInSolutionExplorer": false
+}

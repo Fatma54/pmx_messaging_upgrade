@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Palladio Performance Model eXtractor Upgrade PCM
+Bundle-SymbolicName: org.palladiosimulator.pmxupgrade.pcm
+Bundle-Version: 5.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Import-Package: javax.xml.bind.annotation,
+ org.apache.log4j;version="1.2.15",
+ tools.descartes.pmx.builder,
+ tools.descartes.pmx.util
+Require-Bundle: org.palladiosimulator.pcm;bundle-version="5.0.0",
+ jakarta.xml.bind,
+ org.palladiosimulator.edp2;bundle-version="5.0.0",
+ org.palladiosimulator.monitorrepository;bundle-version="5.0.0",
+ org.palladiosimulator.pcm.edp2.measuringpoint;bundle-version="5.0.0",
+ org.palladiosimulator.pmxupgrade;bundle-version="1.0.0",
+ org.apache.commons.cli,
+ org.palladiosimulator.indirections.scheduler;bundle-version="4.3.0",
+ org.palladiosimulator.indirections,
+ org.palladiosimulator.pcm.edit
+Export-Package: org.palladiosimulator.pmxupgrade.pcm.builder,
+ org.palladiosimulator.pmxupgrade.pcm.console

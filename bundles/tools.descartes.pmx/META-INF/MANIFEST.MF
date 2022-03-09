@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PMX Performance Model eXtractor
+Bundle-SymbolicName: tools.descartes.pmx
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: tools.descartes.librede.estimation;visibility:=reexport,
+ tools.descartes.librede.linalg;visibility:=reexport,
+ tools.descartes.librede.model;visibility:=reexport,
+ kieker;bundle-version="1.12.0.v031";visibility:=reexport,
+ org.apache.log4j,
+ tools.descartes.pmx.builder,
+ cern.colt;bundle-version="1.2.0";visibility:=reexport
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: tools.descartes.pmx
+Import-Package: tools.descartes.pmx.builder,
+ tools.descartes.pmx.util

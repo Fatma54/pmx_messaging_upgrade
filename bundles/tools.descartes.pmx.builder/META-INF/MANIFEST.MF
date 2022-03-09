@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PMX Builder
+Bundle-SymbolicName: tools.descartes.pmx.builder
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.emf.ecore,
+ kieker,
+ org.apache.log4j,
+ org.eclipse.emf.common
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: tools.descartes.pmx.builder,
+ tools.descartes.pmx.util

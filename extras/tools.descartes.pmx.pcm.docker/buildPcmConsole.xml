@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project tools.descartes.pmx.pcm.console">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+	
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="${basedir}/../../../workspace tools-descartes-dml-dev-environment-develop/ws"/>
+    <property name="dir.jarfile" value="${dir.buildfile}/../tools.descartes.pmx.pcm.docker/pcmserver"/>
+	
+	<property name="dest.dir" value="${dir.buildfile}/target"/>
+
+	<property name="dir.plugins" value="${basedir}/../tools.descartes.pmx.pcm.releng.p2/target/repository/plugins"/>
+	
+    <target name="create_run_jar">
+    	<!--Unpack Jars-->
+    	<unjar dest="${dir.plugins}">
+    	  <fileset dir="${dir.plugins}/" includes="kieker_1.13.0.v00.jar" />
+    	</unjar>
+		<unjar dest="${dir.plugins}">
+    	  <fileset dir="${dir.plugins}/" includes="cern.colt_1.2.0.v02.jar" />
+		</unjar>
+    	
+        <jar destfile="${dir.jarfile}/pcmConsole.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="tools.descartes.pmx.pcm.console.PMXCommandLinePCM"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+        	<zipfileset excludes="META-INF/*.SF" dir="${dir.plugins}" includes="*.jar"/>
+            <fileset dir="${dir.buildfile}/../tools.descartes.pmx.pcm.builder/target/classes"/>
+        </jar>
+    </target>
+</project>

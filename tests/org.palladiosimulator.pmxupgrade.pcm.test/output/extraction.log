@@ -1,0 +1,315 @@
+INFO - Output directory: C:\Users\fatma\OneDrive\Desktop\Studium\SS21\BA_KASTEL\paper\pmx_messaging_upgrade\tests\org.palladiosimulator.pmxupgrade.pcm.test\output
+INFO - received workload
+INFO - received operation graph
+INFO - received resource demands
+INFO - starting model creation
+INFO - could not find number of cores for PAYMENT-SRV
+INFO - assumed numberOfCores = 2
+INFO - could not find number of cores for INVENTORY-SRV
+INFO - assumed numberOfCores = 2
+INFO - could not find number of cores for CHECKOUT-SRV
+INFO - assumed numberOfCores = 2
+INFO - could not find number of cores for SHIPPING-SRV
+INFO - assumed numberOfCores = 2
+INFO - could not find number of cores for FLOWING-RETAIL-SRV
+INFO - assumed numberOfCores = 2
+INFO - could not find number of cores for MONITOR-SRV
+INFO - assumed numberOfCores = 2
+INFO - could not find number of cores for ORDER-CAMUNDA-SRV
+INFO - assumed numberOfCores = 2
+INFO - 	CHECKOUT-SRV Checkout send 1x called externally
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+WARN - 		No resource demand found for Checkout#send#CHECKOUT-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forCheckoutsend
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+INFO - 	FLOWING-RETAIL-SRV flowing-retail receive 2x called externally
+WARN - 		No resource demand found for flowing-retail#receive#FLOWING-RETAIL-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forflowing-retailreceive
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+INFO - 	FLOWING-RETAIL-SRV flowing-retail send 2x called externally
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+WARN - 		No resource demand found for flowing-retail#send#FLOWING-RETAIL-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forflowing-retailsend
+INFO - 	ORDER-CAMUNDA-SRV OrderCamunda receive 4x called externally
+WARN - 		No resource demand found for OrderCamunda#receive#ORDER-CAMUNDA-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forOrderCamundareceive
+INFO - 	MONITOR-SRV Monitor receive 2x called externally
+WARN - 		No resource demand found for Monitor#receive#MONITOR-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forMonitorreceive
+INFO - 	ORDER-CAMUNDA-SRV OrderCamunda send 1x called externally
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+WARN - 		No resource demand found for OrderCamunda#send#ORDER-CAMUNDA-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forOrderCamundasend
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+INFO - 	FLOWING-RETAIL-SRV flowing-retail receive 1x called externally
+WARN - 		No resource demand found for flowing-retail#receive#FLOWING-RETAIL-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forflowing-retailreceive
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+INFO - 	FLOWING-RETAIL-SRV flowing-retail send 1x called externally
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+WARN - 		No resource demand found for flowing-retail#send#FLOWING-RETAIL-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forflowing-retailsend
+INFO - 	MONITOR-SRV Monitor receive 1x called externally
+WARN - 		No resource demand found for Monitor#receive#MONITOR-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forMonitorreceive
+INFO - 	PAYMENT-SRV Payment receive 1x called externally
+WARN - 		No resource demand found for Payment#receive#PAYMENT-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forPaymentreceive
+INFO - 	PAYMENT-SRV Payment send 1x called externally
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+WARN - 		No resource demand found for Payment#send#PAYMENT-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forPaymentsend
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+INFO - 	FLOWING-RETAIL-SRV flowing-retail receive 1x called externally
+WARN - 		No resource demand found for flowing-retail#receive#FLOWING-RETAIL-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forflowing-retailreceive
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+INFO - 	FLOWING-RETAIL-SRV flowing-retail send 1x called externally
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+WARN - 		No resource demand found for flowing-retail#send#FLOWING-RETAIL-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forflowing-retailsend
+INFO - 	PAYMENT-SRV Payment send 1x called externally
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+WARN - 		No resource demand found for Payment#send#PAYMENT-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forPaymentsend
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+INFO - 	FLOWING-RETAIL-SRV flowing-retail receive 1x called externally
+WARN - 		No resource demand found for flowing-retail#receive#FLOWING-RETAIL-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forflowing-retailreceive
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+INFO - 	FLOWING-RETAIL-SRV flowing-retail send 1x called externally
+WARN - 		No resource demand found for flowing-retail#send#FLOWING-RETAIL-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forflowing-retailsend
+INFO - 	MONITOR-SRV Monitor receive 1x called externally
+WARN - 		No resource demand found for Monitor#receive#MONITOR-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forMonitorreceive
+INFO - 	ORDER-CAMUNDA-SRV OrderCamunda send 1x called externally
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+WARN - 		No resource demand found for OrderCamunda#send#ORDER-CAMUNDA-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forOrderCamundasend
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+INFO - 	FLOWING-RETAIL-SRV flowing-retail receive 1x called externally
+WARN - 		No resource demand found for flowing-retail#receive#FLOWING-RETAIL-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forflowing-retailreceive
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+INFO - 	FLOWING-RETAIL-SRV flowing-retail send 1x called externally
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+WARN - 		No resource demand found for flowing-retail#send#FLOWING-RETAIL-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forflowing-retailsend
+INFO - 	INVENTORY-SRV Inventory receive 1x called externally
+WARN - 		No resource demand found for Inventory#receive#INVENTORY-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forInventoryreceive
+INFO - 	MONITOR-SRV Monitor receive 1x called externally
+WARN - 		No resource demand found for Monitor#receive#MONITOR-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forMonitorreceive
+INFO - 	INVENTORY-SRV Inventory send 1x called externally
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+WARN - 		No resource demand found for Inventory#send#INVENTORY-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forInventorysend
+INFO - 	MONITOR-SRV Monitor receive 1x called externally
+WARN - 		No resource demand found for Monitor#receive#MONITOR-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forMonitorreceive
+INFO - 	ORDER-CAMUNDA-SRV OrderCamunda send 1x called externally
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+WARN - 		No resource demand found for OrderCamunda#send#ORDER-CAMUNDA-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forOrderCamundasend
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+INFO - 	FLOWING-RETAIL-SRV flowing-retail receive 1x called externally
+WARN - 		No resource demand found for flowing-retail#receive#FLOWING-RETAIL-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forflowing-retailreceive
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+INFO - 	FLOWING-RETAIL-SRV flowing-retail send 1x called externally
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+WARN - 		No resource demand found for flowing-retail#send#FLOWING-RETAIL-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forflowing-retailsend
+INFO - 	MONITOR-SRV Monitor receive 1x called externally
+WARN - 		No resource demand found for Monitor#receive#MONITOR-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forMonitorreceive
+INFO - 	SHIPPING-SRV Shipping receive 1x called externally
+WARN - 		No resource demand found for Shipping#receive#SHIPPING-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forShippingreceive
+INFO - 	SHIPPING-SRV Shipping send 1x called externally
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+WARN - 		No resource demand found for Shipping#send#SHIPPING-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forShippingsend
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+INFO - 	FLOWING-RETAIL-SRV flowing-retail receive 1x called externally
+WARN - 		No resource demand found for flowing-retail#receive#FLOWING-RETAIL-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forflowing-retailreceive
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+INFO - 	FLOWING-RETAIL-SRV flowing-retail send 1x called externally
+WARN - 		No resource demand found for flowing-retail#send#FLOWING-RETAIL-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forflowing-retailsend
+INFO - 	MONITOR-SRV Monitor receive 1x called externally
+WARN - 		No resource demand found for Monitor#receive#MONITOR-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forMonitorreceive
+INFO - 	ORDER-CAMUNDA-SRV OrderCamunda send 1x called externally
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+WARN - 		No resource demand found for OrderCamunda#send#ORDER-CAMUNDA-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forOrderCamundasend
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+INFO - 	FLOWING-RETAIL-SRV flowing-retail receive 1x called externally
+WARN - 		No resource demand found for flowing-retail#receive#FLOWING-RETAIL-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forflowing-retailreceive
+ERROR - requested component [flowing-retail] has not been created
+ERROR - [Payment, Checkout, Monitor, OrderCamunda, Shipping, Inventory]
+INFO - 	FLOWING-RETAIL-SRV flowing-retail send 1x called externally
+WARN - 		No resource demand found for flowing-retail#send#FLOWING-RETAIL-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forflowing-retailsend
+INFO - 	MONITOR-SRV Monitor receive 1x called externally
+WARN - 		No resource demand found for Monitor#receive#MONITOR-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forMonitorreceive
+INFO - Stored workload (output/\workloads\send_empiricaldist.csv)
+INFO - [Checkout]
+INFO - send#Checkout#CHECKOUT-SRV 1
+INFO - ==>1.0 1.63061700771811405E18
+INFO -  === durartion === 0.0
+INFO -  === message chain ===
+INFO - send#Checkout#CHECKOUT-SRV
+ERROR - Could not find interface ICheckout
+INFO - Available interfaces[]
+INFO - Complexity of extracted models: #elements 259 #references 312
+INFO - saved extracted.system --> (path: C:/Users/fatma/OneDrive/Desktop/Studium/SS21/BA_KASTEL/paper/pmx_messaging_upgrade/tests/org.palladiosimulator.pmxupgrade.pcm.test/output/extracted.system)
+INFO - saved extracted.repository --> (path: C:/Users/fatma/OneDrive/Desktop/Studium/SS21/BA_KASTEL/paper/pmx_messaging_upgrade/tests/org.palladiosimulator.pmxupgrade.pcm.test/output/extracted.repository)
+INFO - saved extracted.usagemodel --> (path: C:/Users/fatma/OneDrive/Desktop/Studium/SS21/BA_KASTEL/paper/pmx_messaging_upgrade/tests/org.palladiosimulator.pmxupgrade.pcm.test/output/extracted.usagemodel)
+INFO - saved extracted.allocation --> (path: C:/Users/fatma/OneDrive/Desktop/Studium/SS21/BA_KASTEL/paper/pmx_messaging_upgrade/tests/org.palladiosimulator.pmxupgrade.pcm.test/output/extracted.allocation)
+INFO - saved extracted.resourcerepository --> (path: C:/Users/fatma/OneDrive/Desktop/Studium/SS21/BA_KASTEL/paper/pmx_messaging_upgrade/tests/org.palladiosimulator.pmxupgrade.pcm.test/output/extracted.resourcerepository)

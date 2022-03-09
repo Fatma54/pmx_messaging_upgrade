@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PMX Iobserve
+Bundle-SymbolicName: tools.descartes.pmx.iobserve
+Bundle-Version: 1.0.0.qualifier
+Fragment-Host: kieker
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

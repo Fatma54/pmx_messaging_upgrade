@@ -1,0 +1,3217 @@
+{
+  "data": [
+    {
+      "traceID": "180cb19cb3a6d11d",
+      "spans": [
+        {
+          "traceID": "180cb19cb3a6d11d",
+          "spanID": "9f32f10063dd4d90",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "180cb19cb3a6d11d",
+              "spanID": "bd07bc590a6f365d"
+            }
+          ],
+          "startTime": 1594631346638000,
+          "duration": 178,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select specialtie0_.vet_id as vet_id1_1_0_, specialtie0_.specialty_id as specialt2_1_0_, specialty1_.id as id1_0_1_, specialty1_.name as name2_0_1_ from vet_specialties specialtie0_ inner join specialties specialty1_ on specialtie0_.specialty_id=specialty1_.id where specialtie0_.vet_id=?"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "180cb19cb3a6d11d",
+          "spanID": "6ea98374b11cc1fb",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "180cb19cb3a6d11d",
+              "spanID": "bd07bc590a6f365d"
+            }
+          ],
+          "startTime": 1594631346594000,
+          "duration": 225,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select vet0_.id as id1_2_, vet0_.first_name as first_na2_2_, vet0_.last_name as last_nam3_2_ from vets vet0_"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "180cb19cb3a6d11d",
+          "spanID": "d70c6fe3fe9636a5",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "180cb19cb3a6d11d",
+              "spanID": "bd07bc590a6f365d"
+            }
+          ],
+          "startTime": 1594631346621000,
+          "duration": 180,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select specialtie0_.vet_id as vet_id1_1_0_, specialtie0_.specialty_id as specialt2_1_0_, specialty1_.id as id1_0_1_, specialty1_.name as name2_0_1_ from vet_specialties specialtie0_ inner join specialties specialty1_ on specialtie0_.specialty_id=specialty1_.id where specialtie0_.vet_id=?"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "180cb19cb3a6d11d",
+          "spanID": "86433d5db28985bc",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "180cb19cb3a6d11d",
+              "spanID": "bd07bc590a6f365d"
+            }
+          ],
+          "startTime": 1594631346626000,
+          "duration": 176,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select specialtie0_.vet_id as vet_id1_1_0_, specialtie0_.specialty_id as specialt2_1_0_, specialty1_.id as id1_0_1_, specialty1_.name as name2_0_1_ from vet_specialties specialtie0_ inner join specialties specialty1_ on specialtie0_.specialty_id=specialty1_.id where specialtie0_.vet_id=?"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "180cb19cb3a6d11d",
+          "spanID": "6b64de79750f5ea3",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "180cb19cb3a6d11d",
+              "spanID": "bd07bc590a6f365d"
+            }
+          ],
+          "startTime": 1594631346657000,
+          "duration": 186,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select specialtie0_.vet_id as vet_id1_1_0_, specialtie0_.specialty_id as specialt2_1_0_, specialty1_.id as id1_0_1_, specialty1_.name as name2_0_1_ from vet_specialties specialtie0_ inner join specialties specialty1_ on specialtie0_.specialty_id=specialty1_.id where specialtie0_.vet_id=?"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "180cb19cb3a6d11d",
+          "spanID": "4d6c81b988b490e6",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "180cb19cb3a6d11d",
+              "spanID": "bd07bc590a6f365d"
+            }
+          ],
+          "startTime": 1594631346641000,
+          "duration": 262,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select specialtie0_.vet_id as vet_id1_1_0_, specialtie0_.specialty_id as specialt2_1_0_, specialty1_.id as id1_0_1_, specialty1_.name as name2_0_1_ from vet_specialties specialtie0_ inner join specialties specialty1_ on specialtie0_.specialty_id=specialty1_.id where specialtie0_.vet_id=?"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "180cb19cb3a6d11d",
+          "spanID": "8db0aedb67d6057f",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "180cb19cb3a6d11d",
+              "spanID": "bd07bc590a6f365d"
+            }
+          ],
+          "startTime": 1594631346661000,
+          "duration": 133,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select specialtie0_.vet_id as vet_id1_1_0_, specialtie0_.specialty_id as specialt2_1_0_, specialty1_.id as id1_0_1_, specialty1_.name as name2_0_1_ from vet_specialties specialtie0_ inner join specialties specialty1_ on specialtie0_.specialty_id=specialty1_.id where specialtie0_.vet_id=?"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "180cb19cb3a6d11d",
+          "spanID": "bd07bc590a6f365d",
+          "flags": 1,
+          "operationName": "opppppNaaaaaammmeee",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "180cb19cb3a6d11d",
+              "spanID": "ef53be1436045634"
+            }
+          ],
+          "startTime": 1594631346571000,
+          "duration": 107810,
+          "tags": [
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-web-servlet"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "http.url",
+              "type": "string",
+              "value": "http://9197974c5b48:8083/vets"
+            },
+            {
+              "key": "ok",
+              "type": "string",
+              "value": "ok"
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1594631346584000,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "preHandle"
+                },
+                {
+                  "key": "handler",
+                  "type": "string",
+                  "value": "org.springframework.samples.petclinic.vets.web.VetResource#showResourcesVetList()"
+                },
+                {
+                  "key": "handler.class_simple_name",
+                  "type": "string",
+                  "value": "VetResource"
+                },
+                {
+                  "key": "handler.method_name",
+                  "type": "string",
+                  "value": "showResourcesVetList"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631346584000,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "baggage"
+                },
+                {
+                  "key": "key",
+                  "type": "string",
+                  "value": "dies"
+                },
+                {
+                  "key": "value",
+                  "type": "string",
+                  "value": "das"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631346595000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 180cb19cb3a6d11d:6ea98374b11cc1fb:bd07bc590a6f365d:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8083-exec-6"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631346623000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 180cb19cb3a6d11d:d70c6fe3fe9636a5:bd07bc590a6f365d:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8083-exec-6"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631346631000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 180cb19cb3a6d11d:86433d5db28985bc:bd07bc590a6f365d:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8083-exec-6"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631346639000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 180cb19cb3a6d11d:9f32f10063dd4d90:bd07bc590a6f365d:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8083-exec-6"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631346654000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 180cb19cb3a6d11d:4d6c81b988b490e6:bd07bc590a6f365d:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8083-exec-6"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631346659000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 180cb19cb3a6d11d:6b64de79750f5ea3:bd07bc590a6f365d:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8083-exec-6"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631346664000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 180cb19cb3a6d11d:8db0aedb67d6057f:bd07bc590a6f365d:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8083-exec-6"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631346678000,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "afterCompletion"
+                },
+                {
+                  "key": "handler",
+                  "type": "string",
+                  "value": "org.springframework.samples.petclinic.vets.web.VetResource#showResourcesVetList()"
+                }
+              ]
+            }
+          ],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "180cb19cb3a6d11d",
+          "spanID": "180cb19cb3a6d11d",
+          "flags": 1,
+          "operationName": "GET",
+          "references": [],
+          "startTime": 1594631346560000,
+          "duration": 134579,
+          "tags": [
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-spring-webflux"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "sampler.type",
+              "type": "string",
+              "value": "const"
+            },
+            {
+              "key": "sampler.param",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "key": "http.url",
+              "type": "string",
+              "value": "http://localhost:8080/api/vet/vets"
+            },
+            {
+              "key": "peer.hostname",
+              "type": "string",
+              "value": "172.18.0.1"
+            },
+            {
+              "key": "peer.port",
+              "type": "int64",
+              "value": 57630
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "peer.ipv4",
+              "type": "string",
+              "value": "172.18.0.1"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1594631346668000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 180cb19cb3a6d11d:ef53be1436045634:180cb19cb3a6d11d:1 - /vets"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "reactor-http-epoll-1"
+                }
+              ]
+            }
+          ],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "180cb19cb3a6d11d",
+          "spanID": "ef53be1436045634",
+          "flags": 1,
+          "operationName": "/vets",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "180cb19cb3a6d11d",
+              "spanID": "180cb19cb3a6d11d"
+            }
+          ],
+          "startTime": 1594631346567000,
+          "duration": 100176,
+          "tags": [
+            {
+              "key": "route.id",
+              "type": "string",
+              "value": "vets-service"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-spring-cloud-gateway"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "vetsService",
+          "tags": [
+            {
+              "key": "hostname",
+              "type": "string",
+              "value": "9197974c5b48"
+            },
+            {
+              "key": "ip",
+              "type": "string",
+              "value": "172.18.0.7"
+            },
+            {
+              "key": "jaeger.version",
+              "type": "string",
+              "value": "Java-1.2.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "apiGateway",
+          "tags": [
+            {
+              "key": "hostname",
+              "type": "string",
+              "value": "184779715f7a"
+            },
+            {
+              "key": "ip",
+              "type": "string",
+              "value": "172.18.0.11"
+            },
+            {
+              "key": "jaeger.version",
+              "type": "string",
+              "value": "Java-1.2.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "ae8e84821ec21e44",
+      "spans": [
+        {
+          "traceID": "ae8e84821ec21e44",
+          "spanID": "a68e736a2f16563e",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "ae8e84821ec21e44",
+              "spanID": "96884d515c09719a"
+            }
+          ],
+          "startTime": 1594631345018000,
+          "duration": 318,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select owner0_.id as id1_0_0_, owner0_.address as address2_0_0_, owner0_.city as city3_0_0_, owner0_.first_name as first_na4_0_0_, owner0_.last_name as last_nam5_0_0_, owner0_.telephone as telephon6_0_0_, pets1_.owner_id as owner_id4_1_1_, pets1_.id as id1_1_1_, pets1_.id as id1_1_2_, pets1_.birth_date as birth_da2_1_2_, pets1_.name as name3_1_2_, pets1_.owner_id as owner_id4_1_2_, pets1_.type_id as type_id5_1_2_, pettype2_.id as id1_2_3_, pettype2_.name as name2_2_3_ from owners owner0_ left outer join pets pets1_ on owner0_.id=pets1_.owner_id left outer join types pettype2_ on pets1_.type_id=pettype2_.id where owner0_.id=?"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "ae8e84821ec21e44",
+          "spanID": "96884d515c09719a",
+          "flags": 1,
+          "operationName": "findOwner",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "ae8e84821ec21e44",
+              "spanID": "1a96c877f26630d1"
+            }
+          ],
+          "startTime": 1594631345009000,
+          "duration": 15331,
+          "tags": [
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "http.url",
+              "type": "string",
+              "value": "http://f5988d89c832:8081/owners/1"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-web-servlet"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1594631345011000,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "preHandle"
+                },
+                {
+                  "key": "handler",
+                  "type": "string",
+                  "value": "org.springframework.samples.petclinic.customers.web.OwnerResource#findOwner(int)"
+                },
+                {
+                  "key": "handler.class_simple_name",
+                  "type": "string",
+                  "value": "OwnerResource"
+                },
+                {
+                  "key": "handler.method_name",
+                  "type": "string",
+                  "value": "findOwner"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631345018000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: ae8e84821ec21e44:a68e736a2f16563e:96884d515c09719a:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8081-exec-3"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631345024000,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "afterCompletion"
+                },
+                {
+                  "key": "handler",
+                  "type": "string",
+                  "value": "org.springframework.samples.petclinic.customers.web.OwnerResource#findOwner(int)"
+                }
+              ]
+            }
+          ],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "ae8e84821ec21e44",
+          "spanID": "1a96c877f26630d1",
+          "flags": 1,
+          "operationName": "GET",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "ae8e84821ec21e44",
+              "spanID": "ae8e84821ec21e44"
+            }
+          ],
+          "startTime": 1594631344998000,
+          "duration": 30478,
+          "tags": [
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-spring-webclient"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "http.url",
+              "type": "string",
+              "value": "http://f5988d89c832:8081/owners/1"
+            },
+            {
+              "key": "peer.port",
+              "type": "int64",
+              "value": 8081
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "ae8e84821ec21e44",
+          "spanID": "c7d2e750b3a8c2b8",
+          "flags": 1,
+          "operationName": "GET",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "ae8e84821ec21e44",
+              "spanID": "ae8e84821ec21e44"
+            }
+          ],
+          "startTime": 1594631345037000,
+          "duration": 51327,
+          "tags": [
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-spring-webclient"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "http.url",
+              "type": "string",
+              "value": "http://6b41821108e7:8082/pets/visits?petId=1"
+            },
+            {
+              "key": "peer.port",
+              "type": "int64",
+              "value": 8082
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1594631345088000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: ae8e84821ec21e44:c7d2e750b3a8c2b8:ae8e84821ec21e44:1 - GET"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "reactor-http-epoll-1"
+                }
+              ]
+            }
+          ],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "ae8e84821ec21e44",
+          "spanID": "ae8e84821ec21e44",
+          "flags": 1,
+          "operationName": "getOwnerDetails",
+          "references": [],
+          "startTime": 1594631344994000,
+          "duration": 109593,
+          "tags": [
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-spring-webflux"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "sampler.type",
+              "type": "string",
+              "value": "const"
+            },
+            {
+              "key": "sampler.param",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "key": "http.url",
+              "type": "string",
+              "value": "http://localhost:8080/api/gateway/owners/1"
+            },
+            {
+              "key": "peer.hostname",
+              "type": "string",
+              "value": "172.18.0.1"
+            },
+            {
+              "key": "peer.port",
+              "type": "int64",
+              "value": 57630
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "peer.ipv4",
+              "type": "string",
+              "value": "172.18.0.1"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1594631345104000,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "handle"
+                },
+                {
+                  "key": "handler",
+                  "type": "string",
+                  "value": "/api/gateway/owners/{ownerId}"
+                },
+                {
+                  "key": "handler.class_simple_name",
+                  "type": "string",
+                  "value": "ApiGatewayController"
+                },
+                {
+                  "key": "handler.method_name",
+                  "type": "string",
+                  "value": "getOwnerDetails"
+                }
+              ]
+            }
+          ],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "ae8e84821ec21e44",
+          "spanID": "67cf6fd1dc1c53ad",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "ae8e84821ec21e44",
+              "spanID": "9a5e492a14a5b352"
+            }
+          ],
+          "startTime": 1594631345043000,
+          "duration": 331,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select visit0_.id as id1_0_, visit0_.visit_date as visit_da2_0_, visit0_.description as descript3_0_, visit0_.pet_id as pet_id4_0_ from visits visit0_ where visit0_.pet_id in (?)"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": null
+        },
+        {
+          "traceID": "ae8e84821ec21e44",
+          "spanID": "ed415e71d66dc00a",
+          "flags": 1,
+          "operationName": "just4fun",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "ae8e84821ec21e44",
+              "spanID": "9a5e492a14a5b352"
+            }
+          ],
+          "startTime": 1594631345080000,
+          "duration": 219,
+          "tags": [
+            {
+              "key": "number",
+              "type": "int64",
+              "value": 1
+            },
+            {
+              "key": "Parameters",
+              "type": "string",
+              "value": "[Array:0, Array:1, Array:2, Array:3, Array:4, Array:5, Array:6, Array:7, Array:8, Array:9, Array:10, Array:11]"
+            },
+            {
+              "key": "custom",
+              "type": "string",
+              "value": "CustomTag{o=Mon Jul 13 09:09:05 GMT 2020, key='custom'}"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1594631345080000,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "baggage"
+                },
+                {
+                  "key": "key",
+                  "type": "string",
+                  "value": "asd"
+                },
+                {
+                  "key": "value",
+                  "type": "string",
+                  "value": "asd"
+                }
+              ]
+            }
+          ],
+          "processID": "p3",
+          "warnings": null
+        },
+        {
+          "traceID": "ae8e84821ec21e44",
+          "spanID": "9a5e492a14a5b352",
+          "flags": 1,
+          "operationName": "visitsMultiGet",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "ae8e84821ec21e44",
+              "spanID": "c7d2e750b3a8c2b8"
+            }
+          ],
+          "startTime": 1594631345039000,
+          "duration": 54819,
+          "tags": [
+            {
+              "key": "result",
+              "type": "int64",
+              "value": 1
+            },
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-web-servlet"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "http.url",
+              "type": "string",
+              "value": "http://6b41821108e7:8082/pets/visits"
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "petIds - List",
+              "type": "int64",
+              "value": 1
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1594631345040000,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "preHandle"
+                },
+                {
+                  "key": "handler",
+                  "type": "string",
+                  "value": "org.springframework.samples.petclinic.visits.web.VisitResource#visitsMultiGet(List)"
+                },
+                {
+                  "key": "handler.class_simple_name",
+                  "type": "string",
+                  "value": "VisitResource"
+                },
+                {
+                  "key": "handler.method_name",
+                  "type": "string",
+                  "value": "visitsMultiGet"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631345043000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: ae8e84821ec21e44:67cf6fd1dc1c53ad:9a5e492a14a5b352:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8082-exec-8"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631345088000,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "afterCompletion"
+                },
+                {
+                  "key": "handler",
+                  "type": "string",
+                  "value": "org.springframework.samples.petclinic.visits.web.VisitResource#visitsMultiGet(List)"
+                }
+              ]
+            }
+          ],
+          "processID": "p3",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "customerService",
+          "tags": [
+            {
+              "key": "hostname",
+              "type": "string",
+              "value": "f5988d89c832"
+            },
+            {
+              "key": "ip",
+              "type": "string",
+              "value": "172.18.0.10"
+            },
+            {
+              "key": "jaeger.version",
+              "type": "string",
+              "value": "Java-1.2.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "apiGateway",
+          "tags": [
+            {
+              "key": "hostname",
+              "type": "string",
+              "value": "184779715f7a"
+            },
+            {
+              "key": "ip",
+              "type": "string",
+              "value": "172.18.0.11"
+            },
+            {
+              "key": "jaeger.version",
+              "type": "string",
+              "value": "Java-1.2.0"
+            }
+          ]
+        },
+        "p3": {
+          "serviceName": "visitsService",
+          "tags": [
+            {
+              "key": "hostname",
+              "type": "string",
+              "value": "6b41821108e7"
+            },
+            {
+              "key": "ip",
+              "type": "string",
+              "value": "172.18.0.9"
+            },
+            {
+              "key": "jaeger.version",
+              "type": "string",
+              "value": "Java-1.2.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "cba48d8ac61c3325",
+      "spans": [
+        {
+          "traceID": "cba48d8ac61c3325",
+          "spanID": "c62ad8b279d14a57",
+          "flags": 1,
+          "operationName": "/owners/1/pets/1/visits",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "cba48d8ac61c3325",
+              "spanID": "cba48d8ac61c3325"
+            }
+          ],
+          "startTime": 1594631341697000,
+          "duration": 235552,
+          "tags": [
+            {
+              "key": "route.id",
+              "type": "string",
+              "value": "visits-service"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-spring-cloud-gateway"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "cba48d8ac61c3325",
+          "spanID": "cba48d8ac61c3325",
+          "flags": 1,
+          "operationName": "POST",
+          "references": [],
+          "startTime": 1594631341689000,
+          "duration": 251329,
+          "tags": [
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 201
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-spring-webflux"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "sampler.type",
+              "type": "string",
+              "value": "const"
+            },
+            {
+              "key": "sampler.param",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "key": "http.url",
+              "type": "string",
+              "value": "http://localhost:8080/api/visit/owners/1/pets/1/visits"
+            },
+            {
+              "key": "peer.hostname",
+              "type": "string",
+              "value": "172.18.0.1"
+            },
+            {
+              "key": "peer.port",
+              "type": "int64",
+              "value": 57630
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "peer.ipv4",
+              "type": "string",
+              "value": "172.18.0.1"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1594631341933000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: cba48d8ac61c3325:c62ad8b279d14a57:cba48d8ac61c3325:1 - /owners/1/pets/1/visits"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "reactor-http-epoll-1"
+                }
+              ]
+            }
+          ],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "cba48d8ac61c3325",
+          "spanID": "38813329178200ea",
+          "flags": 1,
+          "operationName": "create",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "cba48d8ac61c3325",
+              "spanID": "c62ad8b279d14a57"
+            }
+          ],
+          "startTime": 1594631341699000,
+          "duration": 238942,
+          "tags": [
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 201
+            },
+            {
+              "key": "http.url",
+              "type": "string",
+              "value": "http://6b41821108e7:8082/owners/1/pets/1/visits"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-web-servlet"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1594631341701000,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "preHandle"
+                },
+                {
+                  "key": "handler",
+                  "type": "string",
+                  "value": "org.springframework.samples.petclinic.visits.web.VisitResource#create(Visit, int)"
+                },
+                {
+                  "key": "handler.class_simple_name",
+                  "type": "string",
+                  "value": "VisitResource"
+                },
+                {
+                  "key": "handler.method_name",
+                  "type": "string",
+                  "value": "create"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631341828000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "org.springframework.samples.petclinic.visits.web.VisitResource"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Saving visit org.springframework.samples.petclinic.visits.model.Visit@2ab1de8e"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8082-exec-6"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631341907000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: cba48d8ac61c3325:aeaccb08c95ed494:38813329178200ea:1 - Update"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8082-exec-6"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631341932000,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "afterCompletion"
+                },
+                {
+                  "key": "handler",
+                  "type": "string",
+                  "value": "org.springframework.samples.petclinic.visits.web.VisitResource#create(Visit, int)"
+                }
+              ]
+            }
+          ],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "cba48d8ac61c3325",
+          "spanID": "aeaccb08c95ed494",
+          "flags": 1,
+          "operationName": "Update",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "cba48d8ac61c3325",
+              "spanID": "38813329178200ea"
+            }
+          ],
+          "startTime": 1594631341907000,
+          "duration": 223,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "insert into visits (id, visit_date, description, pet_id) values (default, ?, ?, ?)"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "apiGateway",
+          "tags": [
+            {
+              "key": "hostname",
+              "type": "string",
+              "value": "184779715f7a"
+            },
+            {
+              "key": "ip",
+              "type": "string",
+              "value": "172.18.0.11"
+            },
+            {
+              "key": "jaeger.version",
+              "type": "string",
+              "value": "Java-1.2.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "visitsService",
+          "tags": [
+            {
+              "key": "hostname",
+              "type": "string",
+              "value": "6b41821108e7"
+            },
+            {
+              "key": "ip",
+              "type": "string",
+              "value": "172.18.0.9"
+            },
+            {
+              "key": "jaeger.version",
+              "type": "string",
+              "value": "Java-1.2.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "65b3b576855b080a",
+      "spans": [
+        {
+          "traceID": "65b3b576855b080a",
+          "spanID": "d4899ce0963769ea",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "65b3b576855b080a",
+              "spanID": "39748d2d7e12fd76"
+            }
+          ],
+          "startTime": 1594631342019000,
+          "duration": 141,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select pets0_.owner_id as owner_id4_1_0_, pets0_.id as id1_1_0_, pets0_.id as id1_1_1_, pets0_.birth_date as birth_da2_1_1_, pets0_.name as name3_1_1_, pets0_.owner_id as owner_id4_1_1_, pets0_.type_id as type_id5_1_1_, pettype1_.id as id1_2_2_, pettype1_.name as name2_2_2_ from pets pets0_ left outer join types pettype1_ on pets0_.type_id=pettype1_.id where pets0_.owner_id=?"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "65b3b576855b080a",
+          "spanID": "553a273c5ed2fd59",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "65b3b576855b080a",
+              "spanID": "39748d2d7e12fd76"
+            }
+          ],
+          "startTime": 1594631342022000,
+          "duration": 177,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select pets0_.owner_id as owner_id4_1_0_, pets0_.id as id1_1_0_, pets0_.id as id1_1_1_, pets0_.birth_date as birth_da2_1_1_, pets0_.name as name3_1_1_, pets0_.owner_id as owner_id4_1_1_, pets0_.type_id as type_id5_1_1_, pettype1_.id as id1_2_2_, pettype1_.name as name2_2_2_ from pets pets0_ left outer join types pettype1_ on pets0_.type_id=pettype1_.id where pets0_.owner_id=?"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "65b3b576855b080a",
+          "spanID": "1593dacfdbd25880",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "65b3b576855b080a",
+              "spanID": "39748d2d7e12fd76"
+            }
+          ],
+          "startTime": 1594631342035000,
+          "duration": 285,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select pets0_.owner_id as owner_id4_1_0_, pets0_.id as id1_1_0_, pets0_.id as id1_1_1_, pets0_.birth_date as birth_da2_1_1_, pets0_.name as name3_1_1_, pets0_.owner_id as owner_id4_1_1_, pets0_.type_id as type_id5_1_1_, pettype1_.id as id1_2_2_, pettype1_.name as name2_2_2_ from pets pets0_ left outer join types pettype1_ on pets0_.type_id=pettype1_.id where pets0_.owner_id=?"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "65b3b576855b080a",
+          "spanID": "cf5a1d13ee74596a",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "65b3b576855b080a",
+              "spanID": "39748d2d7e12fd76"
+            }
+          ],
+          "startTime": 1594631341985000,
+          "duration": 6425,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select owner0_.id as id1_0_, owner0_.address as address2_0_, owner0_.city as city3_0_, owner0_.first_name as first_na4_0_, owner0_.last_name as last_nam5_0_, owner0_.telephone as telephon6_0_ from owners owner0_"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "65b3b576855b080a",
+          "spanID": "835317ca211e8f9c",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "65b3b576855b080a",
+              "spanID": "39748d2d7e12fd76"
+            }
+          ],
+          "startTime": 1594631342038000,
+          "duration": 155,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select pets0_.owner_id as owner_id4_1_0_, pets0_.id as id1_1_0_, pets0_.id as id1_1_1_, pets0_.birth_date as birth_da2_1_1_, pets0_.name as name3_1_1_, pets0_.owner_id as owner_id4_1_1_, pets0_.type_id as type_id5_1_1_, pettype1_.id as id1_2_2_, pettype1_.name as name2_2_2_ from pets pets0_ left outer join types pettype1_ on pets0_.type_id=pettype1_.id where pets0_.owner_id=?"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "65b3b576855b080a",
+          "spanID": "fd39e515c879eb79",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "65b3b576855b080a",
+              "spanID": "39748d2d7e12fd76"
+            }
+          ],
+          "startTime": 1594631342046000,
+          "duration": 296,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select pets0_.owner_id as owner_id4_1_0_, pets0_.id as id1_1_0_, pets0_.id as id1_1_1_, pets0_.birth_date as birth_da2_1_1_, pets0_.name as name3_1_1_, pets0_.owner_id as owner_id4_1_1_, pets0_.type_id as type_id5_1_1_, pettype1_.id as id1_2_2_, pettype1_.name as name2_2_2_ from pets pets0_ left outer join types pettype1_ on pets0_.type_id=pettype1_.id where pets0_.owner_id=?"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "65b3b576855b080a",
+          "spanID": "4ec52575135d03ee",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "65b3b576855b080a",
+              "spanID": "39748d2d7e12fd76"
+            }
+          ],
+          "startTime": 1594631342049000,
+          "duration": 171,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select pets0_.owner_id as owner_id4_1_0_, pets0_.id as id1_1_0_, pets0_.id as id1_1_1_, pets0_.birth_date as birth_da2_1_1_, pets0_.name as name3_1_1_, pets0_.owner_id as owner_id4_1_1_, pets0_.type_id as type_id5_1_1_, pettype1_.id as id1_2_2_, pettype1_.name as name2_2_2_ from pets pets0_ left outer join types pettype1_ on pets0_.type_id=pettype1_.id where pets0_.owner_id=?"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "65b3b576855b080a",
+          "spanID": "39748d2d7e12fd76",
+          "flags": 1,
+          "operationName": "findAll",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "65b3b576855b080a",
+              "spanID": "eadb453683e12d34"
+            }
+          ],
+          "startTime": 1594631341978000,
+          "duration": 79090,
+          "tags": [
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "http.url",
+              "type": "string",
+              "value": "http://f5988d89c832:8081/owners"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-web-servlet"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1594631341980000,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "preHandle"
+                },
+                {
+                  "key": "handler",
+                  "type": "string",
+                  "value": "org.springframework.samples.petclinic.customers.web.OwnerResource#findAll()"
+                },
+                {
+                  "key": "handler.class_simple_name",
+                  "type": "string",
+                  "value": "OwnerResource"
+                },
+                {
+                  "key": "handler.method_name",
+                  "type": "string",
+                  "value": "findAll"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631341991000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 65b3b576855b080a:cf5a1d13ee74596a:39748d2d7e12fd76:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8081-exec-2"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631342002000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 65b3b576855b080a:be3cda9c280f377:39748d2d7e12fd76:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8081-exec-2"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631342005000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 65b3b576855b080a:7cbeec8e3778ef37:39748d2d7e12fd76:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8081-exec-2"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631342007000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 65b3b576855b080a:4f0aa014239431c1:39748d2d7e12fd76:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8081-exec-2"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631342017000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 65b3b576855b080a:30805fd99286c08f:39748d2d7e12fd76:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8081-exec-2"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631342019000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 65b3b576855b080a:d4899ce0963769ea:39748d2d7e12fd76:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8081-exec-2"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631342025000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 65b3b576855b080a:553a273c5ed2fd59:39748d2d7e12fd76:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8081-exec-2"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631342035000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 65b3b576855b080a:1593dacfdbd25880:39748d2d7e12fd76:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8081-exec-2"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631342038000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 65b3b576855b080a:835317ca211e8f9c:39748d2d7e12fd76:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8081-exec-2"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631342047000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 65b3b576855b080a:fd39e515c879eb79:39748d2d7e12fd76:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8081-exec-2"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631342049000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 65b3b576855b080a:4ec52575135d03ee:39748d2d7e12fd76:1 - Query"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "http-nio-8081-exec-2"
+                }
+              ]
+            },
+            {
+              "timestamp": 1594631342057000,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "afterCompletion"
+                },
+                {
+                  "key": "handler",
+                  "type": "string",
+                  "value": "org.springframework.samples.petclinic.customers.web.OwnerResource#findAll()"
+                }
+              ]
+            }
+          ],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "65b3b576855b080a",
+          "spanID": "7cbeec8e3778ef37",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "65b3b576855b080a",
+              "spanID": "39748d2d7e12fd76"
+            }
+          ],
+          "startTime": 1594631342005000,
+          "duration": 118,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select pets0_.owner_id as owner_id4_1_0_, pets0_.id as id1_1_0_, pets0_.id as id1_1_1_, pets0_.birth_date as birth_da2_1_1_, pets0_.name as name3_1_1_, pets0_.owner_id as owner_id4_1_1_, pets0_.type_id as type_id5_1_1_, pettype1_.id as id1_2_2_, pettype1_.name as name2_2_2_ from pets pets0_ left outer join types pettype1_ on pets0_.type_id=pettype1_.id where pets0_.owner_id=?"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "65b3b576855b080a",
+          "spanID": "0be3cda9c280f377",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "65b3b576855b080a",
+              "spanID": "39748d2d7e12fd76"
+            }
+          ],
+          "startTime": 1594631342002000,
+          "duration": 186,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select pets0_.owner_id as owner_id4_1_0_, pets0_.id as id1_1_0_, pets0_.id as id1_1_1_, pets0_.birth_date as birth_da2_1_1_, pets0_.name as name3_1_1_, pets0_.owner_id as owner_id4_1_1_, pets0_.type_id as type_id5_1_1_, pettype1_.id as id1_2_2_, pettype1_.name as name2_2_2_ from pets pets0_ left outer join types pettype1_ on pets0_.type_id=pettype1_.id where pets0_.owner_id=?"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "65b3b576855b080a",
+          "spanID": "4f0aa014239431c1",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "65b3b576855b080a",
+              "spanID": "39748d2d7e12fd76"
+            }
+          ],
+          "startTime": 1594631342007000,
+          "duration": 264,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select pets0_.owner_id as owner_id4_1_0_, pets0_.id as id1_1_0_, pets0_.id as id1_1_1_, pets0_.birth_date as birth_da2_1_1_, pets0_.name as name3_1_1_, pets0_.owner_id as owner_id4_1_1_, pets0_.type_id as type_id5_1_1_, pettype1_.id as id1_2_2_, pettype1_.name as name2_2_2_ from pets pets0_ left outer join types pettype1_ on pets0_.type_id=pettype1_.id where pets0_.owner_id=?"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "65b3b576855b080a",
+          "spanID": "30805fd99286c08f",
+          "flags": 1,
+          "operationName": "Query",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "65b3b576855b080a",
+              "spanID": "39748d2d7e12fd76"
+            }
+          ],
+          "startTime": 1594631342017000,
+          "duration": 111,
+          "tags": [
+            {
+              "key": "db.instance",
+              "type": "string",
+              "value": "unknown_instance"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-jdbc"
+            },
+            {
+              "key": "db.type",
+              "type": "string",
+              "value": "unknown_type"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "db.statement",
+              "type": "string",
+              "value": "select pets0_.owner_id as owner_id4_1_0_, pets0_.id as id1_1_0_, pets0_.id as id1_1_1_, pets0_.birth_date as birth_da2_1_1_, pets0_.name as name3_1_1_, pets0_.owner_id as owner_id4_1_1_, pets0_.type_id as type_id5_1_1_, pettype1_.id as id1_2_2_, pettype1_.name as name2_2_2_ from pets pets0_ left outer join types pettype1_ on pets0_.type_id=pettype1_.id where pets0_.owner_id=?"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "unknown_instance[unknown_type(unknown_peer)]"
+            },
+            {
+              "key": "peer.address",
+              "type": "string",
+              "value": "unknown_peer"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "65b3b576855b080a",
+          "spanID": "65b3b576855b080a",
+          "flags": 1,
+          "operationName": "GET",
+          "references": [],
+          "startTime": 1594631341959000,
+          "duration": 108102,
+          "tags": [
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-spring-webflux"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "sampler.type",
+              "type": "string",
+              "value": "const"
+            },
+            {
+              "key": "sampler.param",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "key": "http.url",
+              "type": "string",
+              "value": "http://localhost:8080/api/customer/owners"
+            },
+            {
+              "key": "peer.hostname",
+              "type": "string",
+              "value": "172.18.0.1"
+            },
+            {
+              "key": "peer.port",
+              "type": "int64",
+              "value": 57630
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "peer.ipv4",
+              "type": "string",
+              "value": "172.18.0.1"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1594631342054000,
+              "fields": [
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "INFO"
+                },
+                {
+                  "key": "logger",
+                  "type": "string",
+                  "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Span reported: 65b3b576855b080a:eadb453683e12d34:65b3b576855b080a:1 - /owners"
+                },
+                {
+                  "key": "thread",
+                  "type": "string",
+                  "value": "reactor-http-epoll-3"
+                }
+              ]
+            }
+          ],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "65b3b576855b080a",
+          "spanID": "eadb453683e12d34",
+          "flags": 1,
+          "operationName": "/owners",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "65b3b576855b080a",
+              "spanID": "65b3b576855b080a"
+            }
+          ],
+          "startTime": 1594631341975000,
+          "duration": 78094,
+          "tags": [
+            {
+              "key": "route.id",
+              "type": "string",
+              "value": "customers-service"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "java-spring-cloud-gateway"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "jaeger"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "customerService",
+          "tags": [
+            {
+              "key": "hostname",
+              "type": "string",
+              "value": "f5988d89c832"
+            },
+            {
+              "key": "ip",
+              "type": "string",
+              "value": "172.18.0.10"
+            },
+            {
+              "key": "jaeger.version",
+              "type": "string",
+              "value": "Java-1.2.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "apiGateway",
+          "tags": [
+            {
+              "key": "hostname",
+              "type": "string",
+              "value": "184779715f7a"
+            },
+            {
+              "key": "ip",
+              "type": "string",
+              "value": "172.18.0.11"
+            },
+            {
+              "key": "jaeger.version",
+              "type": "string",
+              "value": "Java-1.2.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    }
+  ],
+  "total": 0,
+  "limit": 0,
+  "offset": 0,
+  "errors": null
+}

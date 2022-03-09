@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.importWizards">
+      <category
+            name="PMX"
+            id="tools.descartes.pmx.pcm.eclipse.importWizards.sampleCategory">
+      </category>
+      <!--TODO add proper icons -->
+      <wizard
+            name="Palladio Component Model Projects from Kieker Traces"
+            icon="icons/sample.gif"
+            category="tools.descartes.pmx.pcm.eclipse.importWizards.sampleCategory"
+            class="tools.descartes.pmx.pcm.eclipse.importWizards.PMXImportWizard"
+            id="tools.descartes.pmx.pcm.eclipse.importWizards.ImportPCMWizard">
+         <description>
+            Import a PCM project into the workspace.
+         </description>
+      </wizard>
+   </extension>
+
+</plugin>

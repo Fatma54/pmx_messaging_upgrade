@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="tools.descartes.pmx.feature" version="1.0.0.qualifier">
+      <category name="tools.descartes.pmx.category"/>
+   </feature>
+   <feature id="tools.descartes.pmx.feature.source" version="1.0.0.qualifier">
+      <category name="tools.descartes.pmx.category.source"/>
+   </feature>
+   <feature id="tools.descartes.pmx.pcm.feature" version="1.0.0.qualifier">
+      <category name="tools.descartes.pmx.category"/>
+   </feature>
+   <feature id="tools.descartes.pmx.pcm.feature.source" version="1.0.0.qualifier">
+      <category name="tools.descartes.pmx.category"/>
+   </feature>
+   <category-def name="tools.descartes.pmx.category" label="PMX">
+   <description>
+         Performance Model eXtractor
+      </description>
+   </category-def>
+   <category-def name="tools.descartes.pmx.category.source" label="PMX Developer Resources"/>
+</site>

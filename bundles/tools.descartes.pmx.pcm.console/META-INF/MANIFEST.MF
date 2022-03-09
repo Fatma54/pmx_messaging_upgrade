@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Main-Class: tools.descartes.pmx.dml.console.PMXCommandLinePCM
+Bundle-ManifestVersion: 2
+Bundle-Name: PMX PCM Console Frontend
+Bundle-SymbolicName: tools.descartes.pmx.pcm.console;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: tools.descartes.pmx.pcm.console
+Require-Bundle: kieker,
+ org.apache.commons.cli,
+ org.apache.log4j,
+ tools.descartes.pmx,
+ tools.descartes.pmx.builder,
+ tools.descartes.pmx.console,
+ tools.descartes.librede.linalg,
+ tools.descartes.librede.estimation,
+ tools.descartes.librede.model,
+ cern.colt,
+ tools.descartes.pmx.pcm.builder
+Import-Package: tools.descartes.pmx 
+

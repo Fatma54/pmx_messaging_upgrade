@@ -1,0 +1,182 @@
+{
+    "data": [
+        {
+            "traceID": "ee2a9be946a4faf7",
+            "spans": [
+                {
+                    "traceID": "ee2a9be946a4faf7",
+                    "spanID": "638ace80d26b424b",
+                    "operationName": "get /owners",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "ee2a9be946a4faf7",
+                            "spanID": "e6f5a28782247370"
+                        }
+                    ],
+                    "startTime": 1625763705246102,
+                    "duration": 25878,
+                    "tags": [
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "http.path",
+                            "type": "string",
+                            "value": "/owners"
+                        },
+                        {
+                            "key": "mvc.controller.class",
+                            "type": "string",
+                            "value": "OwnerResource"
+                        },
+                        {
+                            "key": "mvc.controller.method",
+                            "type": "string",
+                            "value": "findAll"
+                        },
+                        {
+                            "key": "peer.service",
+                            "type": "string",
+                            "value": ""
+                        },
+                        {
+                            "key": "peer.ipv6",
+                            "type": "binary",
+                            "value": "AAAAAAAAAAAAAAAAAAAAAQ=="
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "ee2a9be946a4faf7",
+                    "spanID": "ee2a9be946a4faf7",
+                    "operationName": "get",
+                    "references": [],
+                    "startTime": 1625763705239767,
+                    "duration": 34583,
+                    "tags": [
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "http.path",
+                            "type": "string",
+                            "value": "/api/customer/owners"
+                        },
+                        {
+                            "key": "peer.service",
+                            "type": "string",
+                            "value": ""
+                        },
+                        {
+                            "key": "peer.ipv6",
+                            "type": "binary",
+                            "value": "AAAAAAAAAAAAAAAAAAAAAQ=="
+                        },
+                        {
+                            "key": "peer.port",
+                            "type": "int64",
+                            "value": 50830
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "ee2a9be946a4faf7",
+                    "spanID": "e6f5a28782247370",
+                    "operationName": "get",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "ee2a9be946a4faf7",
+                            "spanID": "ee2a9be946a4faf7"
+                        }
+                    ],
+                    "startTime": 1625763705244331,
+                    "duration": 27944,
+                    "tags": [
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "http.path",
+                            "type": "string",
+                            "value": "/owners"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "zipkin"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "customers-service",
+                    "tags": [
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "172.25.112.1"
+                        }
+                    ]
+                },
+                "p2": {
+                    "serviceName": "api-gateway",
+                    "tags": [
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "172.25.112.1"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}

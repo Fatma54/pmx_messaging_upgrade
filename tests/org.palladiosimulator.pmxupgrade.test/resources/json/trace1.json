@@ -1,0 +1,707 @@
+{
+    "data": [
+        {
+            "traceID": "30c1602d2394ccc1",
+            "spans": [
+                {
+                    "traceID": "30c1602d2394ccc1",
+                    "spanID": "7d4a6c11ea5bd102",
+                    "flags": 1,
+                    "operationName": "Query",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "30c1602d2394ccc1",
+                            "spanID": "c289f53db3b14aa0"
+                        }
+                    ],
+                    "startTime": 1595501637321000,
+                    "duration": 133,
+                    "tags": [
+                        {
+                            "key": "db.instance",
+                            "type": "string",
+                            "value": "unknown_instance"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "java-jdbc"
+                        },
+                        {
+                            "key": "db.type",
+                            "type": "string",
+                            "value": "unknown_type"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "db.statement",
+                            "type": "string",
+                            "value": "select owner0_.id as id1_0_0_, owner0_.address as address2_0_0_, owner0_.city as city3_0_0_, owner0_.first_name as first_na4_0_0_, owner0_.last_name as last_nam5_0_0_, owner0_.telephone as telephon6_0_0_, pets1_.owner_id as owner_id4_1_1_, pets1_.id as id1_1_1_, pets1_.id as id1_1_2_, pets1_.birth_date as birth_da2_1_2_, pets1_.name as name3_1_2_, pets1_.owner_id as owner_id4_1_2_, pets1_.type_id as type_id5_1_2_, pettype2_.id as id1_2_3_, pettype2_.name as name2_2_3_ from owners owner0_ left outer join pets pets1_ on owner0_.id=pets1_.owner_id left outer join types pettype2_ on pets1_.type_id=pettype2_.id where owner0_.id=?"
+                        },
+                        {
+                            "key": "peer.service",
+                            "type": "string",
+                            "value": "unknown_instance[unknown_type(unknown_peer)]"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "unknown_peer"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "30c1602d2394ccc1",
+                    "spanID": "c289f53db3b14aa0",
+                    "flags": 1,
+                    "operationName": "findOwner",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "30c1602d2394ccc1",
+                            "spanID": "2a8eaf30a0270e92"
+                        }
+                    ],
+                    "startTime": 1595501637306000,
+                    "duration": 27167,
+                    "tags": [
+                        {
+                            "key": "paramType",
+                            "type": "string",
+                            "value": "int"
+                        },
+                        {
+                            "key": "componentType",
+                            "type": "string",
+                            "value": "petclinic.customers.web.OwnerResource"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 200
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "java-web-servlet"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://4a793cfb9641:8081/owners/1"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "returnType",
+                            "type": "string",
+                            "value": "java.util.Optional\u003cpetclinic.customers.model.Owner\u003e"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [
+                        {
+                            "timestamp": 1595501637308000,
+                            "fields": [
+                                {
+                                    "key": "event",
+                                    "type": "string",
+                                    "value": "preHandle"
+                                },
+                                {
+                                    "key": "handler",
+                                    "type": "string",
+                                    "value": "org.springframework.samples.petclinic.customers.web.OwnerResource#findOwner(int)"
+                                },
+                                {
+                                    "key": "handler.class_simple_name",
+                                    "type": "string",
+                                    "value": "OwnerResource"
+                                },
+                                {
+                                    "key": "handler.method_name",
+                                    "type": "string",
+                                    "value": "findOwner"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1595501637321000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 30c1602d2394ccc1:7d4a6c11ea5bd102:c289f53db3b14aa0:1 - Query"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "http-nio-8081-exec-8"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1595501637332000,
+                            "fields": [
+                                {
+                                    "key": "event",
+                                    "type": "string",
+                                    "value": "afterCompletion"
+                                },
+                                {
+                                    "key": "handler",
+                                    "type": "string",
+                                    "value": "org.springframework.samples.petclinic.customers.web.OwnerResource#findOwner(int)"
+                                }
+                            ]
+                        }
+                    ],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "30c1602d2394ccc1",
+                    "spanID": "5c0bc0bfbb4f551c",
+                    "flags": 1,
+                    "operationName": "Query",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "30c1602d2394ccc1",
+                            "spanID": "05b88c41947b0433"
+                        }
+                    ],
+                    "startTime": 1595501637895255,
+                    "duration": 1606,
+                    "tags": [
+                        {
+                            "key": "db.instance",
+                            "type": "string",
+                            "value": "unknown_instance"
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "java-jdbc"
+                        },
+                        {
+                            "key": "db.type",
+                            "type": "string",
+                            "value": "unknown_type"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "db.statement",
+                            "type": "string",
+                            "value": "select visit0_.id as id1_0_, visit0_.visit_date as visit_da2_0_, visit0_.description as descript3_0_, visit0_.pet_id as pet_id4_0_ from visits visit0_ where visit0_.pet_id in (?)"
+                        },
+                        {
+                            "key": "peer.service",
+                            "type": "string",
+                            "value": "unknown_instance[unknown_type(unknown_peer)]"
+                        },
+                        {
+                            "key": "peer.address",
+                            "type": "string",
+                            "value": "unknown_peer"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": [
+                        "This span's timestamps were adjusted by -4.7445ms"
+                    ]
+                },
+                {
+                    "traceID": "30c1602d2394ccc1",
+                    "spanID": "05b88c41947b0433",
+                    "flags": 1,
+                    "operationName": "visitsMultiGet",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "30c1602d2394ccc1",
+                            "spanID": "98a58f01282cf8f7"
+                        }
+                    ],
+                    "startTime": 1595501637462255,
+                    "duration": 481678,
+                    "tags": [
+                        {
+                            "key": "paramType",
+                            "type": "string",
+                            "value": "java.util.List\u003cjava.lang.Integer\u003e"
+                        },
+                        {
+                            "key": "componentType",
+                            "type": "string",
+                            "value": "petclinic.visits.web.VisitResource"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 200
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "java-web-servlet"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://f2441d64f8db:8082/pets/visits"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "returnType",
+                            "type": "string",
+                            "value": "petclinic.visits.model.Visits"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [
+                        {
+                            "timestamp": 1595501637467255,
+                            "fields": [
+                                {
+                                    "key": "event",
+                                    "type": "string",
+                                    "value": "preHandle"
+                                },
+                                {
+                                    "key": "handler",
+                                    "type": "string",
+                                    "value": "org.springframework.samples.petclinic.visits.web.VisitResource#visitsMultiGet(List)"
+                                },
+                                {
+                                    "key": "handler.class_simple_name",
+                                    "type": "string",
+                                    "value": "VisitResource"
+                                },
+                                {
+                                    "key": "handler.method_name",
+                                    "type": "string",
+                                    "value": "visitsMultiGet"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1595501637897255,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 30c1602d2394ccc1:5c0bc0bfbb4f551c:5b88c41947b0433:1 - Query"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "http-nio-8082-exec-7"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1595501637942255,
+                            "fields": [
+                                {
+                                    "key": "event",
+                                    "type": "string",
+                                    "value": "afterCompletion"
+                                },
+                                {
+                                    "key": "handler",
+                                    "type": "string",
+                                    "value": "org.springframework.samples.petclinic.visits.web.VisitResource#visitsMultiGet(List)"
+                                }
+                            ]
+                        }
+                    ],
+                    "processID": "p2",
+                    "warnings": [
+                        "This span's timestamps were adjusted by -4.7445ms"
+                    ]
+                },
+                {
+                    "traceID": "30c1602d2394ccc1",
+                    "spanID": "2a8eaf30a0270e92",
+                    "flags": 1,
+                    "operationName": "GET",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "30c1602d2394ccc1",
+                            "spanID": "30c1602d2394ccc1"
+                        }
+                    ],
+                    "startTime": 1595501637272000,
+                    "duration": 108308,
+                    "tags": [
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 200
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "java-spring-webclient"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://4a793cfb9641:8081/owners/1"
+                        },
+                        {
+                            "key": "peer.port",
+                            "type": "int64",
+                            "value": 8081
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p3",
+                    "warnings": null
+                },
+                {
+                    "traceID": "30c1602d2394ccc1",
+                    "spanID": "98a58f01282cf8f7",
+                    "flags": 1,
+                    "operationName": "GET",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "30c1602d2394ccc1",
+                            "spanID": "30c1602d2394ccc1"
+                        }
+                    ],
+                    "startTime": 1595501637460000,
+                    "duration": 486189,
+                    "tags": [
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 200
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "java-spring-webclient"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "client"
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://f2441d64f8db:8082/pets/visits?petId=1"
+                        },
+                        {
+                            "key": "peer.port",
+                            "type": "int64",
+                            "value": 8082
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p3",
+                    "warnings": null
+                },
+                {
+                    "traceID": "30c1602d2394ccc1",
+                    "spanID": "30c1602d2394ccc1",
+                    "flags": 1,
+                    "operationName": "getOwnerDetails",
+                    "references": [],
+                    "startTime": 1595501637181000,
+                    "duration": 782853,
+                    "tags": [
+                        {
+                            "key": "componentType",
+                            "type": "string",
+                            "value": "petclinic.api.boundary.web.ApiGatewayController"
+                        },
+                        {
+                            "key": "sampler.type",
+                            "type": "string",
+                            "value": "const"
+                        },
+                        {
+                            "key": "sampler.param",
+                            "type": "bool",
+                            "value": true
+                        },
+                        {
+                            "key": "http.url",
+                            "type": "string",
+                            "value": "http://localhost:8080/api/gateway/owners/1"
+                        },
+                        {
+                            "key": "peer.port",
+                            "type": "int64",
+                            "value": 59480
+                        },
+                        {
+                            "key": "peer.ipv4",
+                            "type": "string",
+                            "value": "172.19.0.1"
+                        },
+                        {
+                            "key": "paramType",
+                            "type": "string",
+                            "value": "int"
+                        },
+                        {
+                            "key": "http.status_code",
+                            "type": "int64",
+                            "value": 200
+                        },
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "java-spring-webflux"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "server"
+                        },
+                        {
+                            "key": "peer.hostname",
+                            "type": "string",
+                            "value": "172.19.0.1"
+                        },
+                        {
+                            "key": "http.method",
+                            "type": "string",
+                            "value": "GET"
+                        },
+                        {
+                            "key": "returnType",
+                            "type": "string",
+                            "value": "reactor.core.publisher.Mono\u003cpetclinic.api.dto.OwnerDetails\u003e"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [
+                        {
+                            "timestamp": 1595501637964000,
+                            "fields": [
+                                {
+                                    "key": "event",
+                                    "type": "string",
+                                    "value": "handle"
+                                },
+                                {
+                                    "key": "handler",
+                                    "type": "string",
+                                    "value": "/api/gateway/owners/{ownerId}"
+                                },
+                                {
+                                    "key": "handler.class_simple_name",
+                                    "type": "string",
+                                    "value": "ApiGatewayController"
+                                },
+                                {
+                                    "key": "handler.method_name",
+                                    "type": "string",
+                                    "value": "getOwnerDetails"
+                                }
+                            ]
+                        },
+                        {
+                            "timestamp": 1595501637964000,
+                            "fields": [
+                                {
+                                    "key": "level",
+                                    "type": "string",
+                                    "value": "INFO"
+                                },
+                                {
+                                    "key": "logger",
+                                    "type": "string",
+                                    "value": "io.jaegertracing.internal.reporters.LoggingReporter"
+                                },
+                                {
+                                    "key": "message",
+                                    "type": "string",
+                                    "value": "Span reported: 30c1602d2394ccc1:30c1602d2394ccc1:0:1 - getOwnerDetails"
+                                },
+                                {
+                                    "key": "thread",
+                                    "type": "string",
+                                    "value": "reactor-http-epoll-1"
+                                }
+                            ]
+                        }
+                    ],
+                    "processID": "p3",
+                    "warnings": null
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "customerService",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "4a793cfb9641"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "172.19.0.11"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "Java-1.2.0"
+                        }
+                    ]
+                },
+                "p2": {
+                    "serviceName": "visitsService",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "f2441d64f8db"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "172.19.0.9"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "Java-1.2.0"
+                        }
+                    ]
+                },
+                "p3": {
+                    "serviceName": "apiGateway",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "42bae73ec35d"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "172.19.0.7"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "Java-1.2.0"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        }		
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}

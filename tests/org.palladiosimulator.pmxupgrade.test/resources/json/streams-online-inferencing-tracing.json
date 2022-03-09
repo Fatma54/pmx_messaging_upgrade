@@ -1,0 +1,471 @@
+{
+    "data": [
+        {
+            "traceID": "874e8a6cf6aadffa",
+            "spans": [
+                {
+                    "traceID": "874e8a6cf6aadffa",
+                    "spanID": "874e8a6cf6aadffa",
+                    "flags": 1,
+                    "operationName": "To_streams-online-inferencing-flights-changelog",
+                    "references": [],
+                    "startTime": 1646218036012586,
+                    "duration": 116000,
+                    "tags": [
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "java-kafka"
+                        },
+                        {
+                            "key": "message_bus.destination",
+                            "type": "string",
+                            "value": "streams-online-inferencing-flights-changelog"
+                        },
+                        {
+                            "key": "partition",
+                            "type": "int64",
+                            "value": 0
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "producer"
+                        },
+                        {
+                            "key": "sampler.type",
+                            "type": "string",
+                            "value": "const"
+                        },
+                        {
+                            "key": "peer.service",
+                            "type": "string",
+                            "value": "kafka"
+                        },
+                        {
+                            "key": "sampler.param",
+                            "type": "bool",
+                            "value": true
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "kStreamOnlinePredictions",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "DESKTOP-5GTMA2D"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "100.89.70.217"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "Java-1.8.0"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        },
+        {
+            "traceID": "ede82d234252b599",
+            "spans": [
+                {
+                    "traceID": "ede82d234252b599",
+                    "spanID": "ede82d234252b599",
+                    "flags": 1,
+                    "operationName": "To_predictions",
+                    "references": [],
+                    "startTime": 1646218036012586,
+                    "duration": 101005,
+                    "tags": [
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "java-kafka"
+                        },
+                        {
+                            "key": "message_bus.destination",
+                            "type": "string",
+                            "value": "predictions"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "producer"
+                        },
+                        {
+                            "key": "sampler.type",
+                            "type": "string",
+                            "value": "const"
+                        },
+                        {
+                            "key": "peer.service",
+                            "type": "string",
+                            "value": "kafka"
+                        },
+                        {
+                            "key": "sampler.param",
+                            "type": "bool",
+                            "value": true
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "kStreamOnlinePredictions",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "DESKTOP-5GTMA2D"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "100.89.70.217"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "Java-1.8.0"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        },
+        {
+            "traceID": "11c368beb5e40308",
+            "spans": [
+                {
+                    "traceID": "11c368beb5e40308",
+                    "spanID": "0662fc46e06cce57",
+                    "flags": 1,
+                    "operationName": "From_raw-airline-data",
+                    "references": [
+                        {
+                            "refType": "FOLLOWS_FROM",
+                            "traceID": "11c368beb5e40308",
+                            "spanID": "11c368beb5e40308"
+                        }
+                    ],
+                    "startTime": 1646217665577766,
+                    "duration": 0,
+                    "tags": [
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "java-kafka"
+                        },
+                        {
+                            "key": "message_bus.destination",
+                            "type": "string",
+                            "value": "raw-airline-data"
+                        },
+                        {
+                            "key": "partition",
+                            "type": "int64",
+                            "value": 0
+                        },
+                        {
+                            "key": "offset",
+                            "type": "int64",
+                            "value": 900
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "consumer"
+                        },
+                        {
+                            "key": "peer.service",
+                            "type": "string",
+                            "value": "kafka"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "11c368beb5e40308",
+                    "spanID": "11c368beb5e40308",
+                    "flags": 1,
+                    "operationName": "RawDataProducer",
+                    "references": [],
+                    "startTime": 1646217665573784,
+                    "duration": 2980,
+                    "tags": [
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "java-kafka"
+                        },
+                        {
+                            "key": "message_bus.destination",
+                            "type": "string",
+                            "value": "raw-airline-data"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "producer"
+                        },
+                        {
+                            "key": "sampler.type",
+                            "type": "string",
+                            "value": "const"
+                        },
+                        {
+                            "key": "peer.service",
+                            "type": "string",
+                            "value": "kafka"
+                        },
+                        {
+                            "key": "sampler.param",
+                            "type": "bool",
+                            "value": true
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "kStreamOnlinePredictions",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "DESKTOP-5GTMA2D"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "100.89.70.217"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "Java-1.8.0"
+                        }
+                    ]
+                },
+                "p2": {
+                    "serviceName": "dataProducer",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "DESKTOP-5GTMA2D"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "100.89.70.217"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "Java-1.8.0"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        },
+        {
+            "traceID": "963697ab923e6ebf",
+            "spans": [
+                {
+                    "traceID": "963697ab923e6ebf",
+                    "spanID": "f60fcc1e02a23e8d",
+                    "flags": 1,
+                    "operationName": "From_ml-data-input",
+                    "references": [
+                        {
+                            "refType": "FOLLOWS_FROM",
+                            "traceID": "963697ab923e6ebf",
+                            "spanID": "963697ab923e6ebf"
+                        }
+                    ],
+                    "startTime": 1646217665581784,
+                    "duration": 0,
+                    "tags": [
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "java-kafka"
+                        },
+                        {
+                            "key": "message_bus.destination",
+                            "type": "string",
+                            "value": "ml-data-input"
+                        },
+                        {
+                            "key": "partition",
+                            "type": "int64",
+                            "value": 0
+                        },
+                        {
+                            "key": "offset",
+                            "type": "int64",
+                            "value": 909
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "consumer"
+                        },
+                        {
+                            "key": "peer.service",
+                            "type": "string",
+                            "value": "kafka"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "963697ab923e6ebf",
+                    "spanID": "963697ab923e6ebf",
+                    "flags": 1,
+                    "operationName": "RawDataProducer",
+                    "references": [],
+                    "startTime": 1646217665577766,
+                    "duration": 5004,
+                    "tags": [
+                        {
+                            "key": "component",
+                            "type": "string",
+                            "value": "java-kafka"
+                        },
+                        {
+                            "key": "message_bus.destination",
+                            "type": "string",
+                            "value": "ml-data-input"
+                        },
+                        {
+                            "key": "span.kind",
+                            "type": "string",
+                            "value": "producer"
+                        },
+                        {
+                            "key": "sampler.type",
+                            "type": "string",
+                            "value": "const"
+                        },
+                        {
+                            "key": "peer.service",
+                            "type": "string",
+                            "value": "kafka"
+                        },
+                        {
+                            "key": "sampler.param",
+                            "type": "bool",
+                            "value": true
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "proto"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "kStreamOnlinePredictions",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "DESKTOP-5GTMA2D"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "100.89.70.217"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "Java-1.8.0"
+                        }
+                    ]
+                },
+                "p2": {
+                    "serviceName": "dataProducer",
+                    "tags": [
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "DESKTOP-5GTMA2D"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "100.89.70.217"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "Java-1.8.0"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}

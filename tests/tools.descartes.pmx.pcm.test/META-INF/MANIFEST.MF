@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Test
+Bundle-SymbolicName: tools.descartes.pmx.pcm.test
+Bundle-Version: 1.0.0.qualifier
+Fragment-Host: tools.descartes.pmx.console
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.junit,
+ org.eclipse.emf.common,
+ tools.descartes.pmx.pcm.builder,
+ tools.descartes.pmx.pcm.console
+Import-Package: org.palladiosimulator.pcm.allocation,
+ org.palladiosimulator.pcm.parameter.util,
+ org.palladiosimulator.pcm.repository,
+ org.palladiosimulator.pcm.resourceenvironment

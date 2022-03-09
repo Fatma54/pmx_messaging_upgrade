@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="platform:/resource/Kieker/model/AnalysisMetaModel.ecore" name="AnalysisProject">
+  <plugins xsi:type="Reader" name="FSReader-2" classname="kieker.analysis.plugin.reader.filesystem.FSReader" id="_GdVs0OlJEeWVPqzecXkBbg">
+    <properties name="ignoreUnknownRecordTypes" value="true"/>
+    <properties name="inputDirs" value="C:/Users/Jürgen/git/pmx/tools.descartes.pmx.test/testFiles/kiekerTeetimeData/bookstore-logs"/>
+    <outputPorts name="monitoringRecords" id="_GdXiAOlJEeWVPqzecXkBbg" subscribers="_GdZXMOlJEeWVPqzecXkBbg"/>
+  </plugins>
+  <plugins xsi:type="Filter" name="StringBufferFilter-3" classname="kieker.analysis.plugin.filter.forward.StringBufferFilter" id="_GdYwIOlJEeWVPqzecXkBbg">
+    <outputPorts name="relayed-events" id="_GdYwIelJEeWVPqzecXkBbg" subscribers="_GdZXNulJEeWVPqzecXkBbg _GdZXNOlJEeWVPqzecXkBbg"/>
+    <inputPorts name="received-events" id="_GdZXMOlJEeWVPqzecXkBbg"/>
+  </plugins>
+  <plugins xsi:type="Filter" name="TimestampFilter-4" classname="kieker.analysis.plugin.filter.select.TimestampFilter" id="_GdZXMelJEeWVPqzecXkBbg">
+    <properties name="timeunit" value="NANOSECONDS"/>
+    <properties name="ignoreAfterTimestamp" value="9223372036854775807"/>
+    <properties name="ignoreBeforeTimestamp" value="0"/>
+    <outputPorts name="recordsWithinTimePeriod" id="_GdZXMulJEeWVPqzecXkBbg" subscribers="_GdZXPOlJEeWVPqzecXkBbg"/>
+    <outputPorts name="recordsOutsidePeriod" id="_GdZXM-lJEeWVPqzecXkBbg"/>
+    <inputPorts name="monitoringRecordsFlow" id="_GdZXNOlJEeWVPqzecXkBbg"/>
+    <inputPorts name="monitoringRecordsCombined" id="_GdZXNelJEeWVPqzecXkBbg"/>
+    <inputPorts name="monitoringRecordsExecution" id="_GdZXNulJEeWVPqzecXkBbg"/>
+    <inputPorts name="monitoringRecordsAny" id="_GdZXN-lJEeWVPqzecXkBbg"/>
+  </plugins>
+  <plugins xsi:type="Filter" name="TraceIdFilter-5" classname="kieker.analysis.plugin.filter.select.TraceIdFilter" id="_GdZXOOlJEeWVPqzecXkBbg">
+    <properties name="selectedTraceIds" value=""/>
+    <properties name="acceptAllTraces" value="true"/>
+    <outputPorts name="recordsMatchingId" id="_GdZXOelJEeWVPqzecXkBbg" subscribers="_GdZ-QulJEeWVPqzecXkBbg _GdZ-TOlJEeWVPqzecXkBbg"/>
+    <outputPorts name="recordsNotMatchingId" id="_GdZXOulJEeWVPqzecXkBbg"/>
+    <inputPorts name="monitoringRecordsFlow" id="_GdZXO-lJEeWVPqzecXkBbg"/>
+    <inputPorts name="monitoringRecordsCombined" id="_GdZXPOlJEeWVPqzecXkBbg"/>
+    <inputPorts name="monitoringRecordsExecution" id="_GdZXPelJEeWVPqzecXkBbg"/>
+  </plugins>
+  <plugins xsi:type="Filter" name="Execution record transformation" classname="kieker.tools.traceAnalysis.filter.executionRecordTransformation.ExecutionRecordTransformationFilter" id="_GdZXPulJEeWVPqzecXkBbg">
+    <repositories name="systemModelRepository" repository="_GdUesOlJEeWVPqzecXkBbg" id="_GdZ-QOlJEeWVPqzecXkBbg"/>
+    <outputPorts name="transformedExecutions" id="_GdZ-QelJEeWVPqzecXkBbg" subscribers="_GdZ-SOlJEeWVPqzecXkBbg"/>
+    <inputPorts name="operationExecutionRecords" id="_GdZ-QulJEeWVPqzecXkBbg"/>
+  </plugins>
+  <plugins xsi:type="Filter" name="Trace reconstruction (execution records -> execution traces)" classname="kieker.tools.traceAnalysis.filter.traceReconstruction.TraceReconstructionFilter" id="_GdZ-Q-lJEeWVPqzecXkBbg">
+    <properties name="timeunit" value="NANOSECONDS"/>
+    <properties name="ignoreInvalidTraces" value="false"/>
+    <properties name="maxTraceDuration" value="600000000000"/>
+    <repositories name="systemModelRepository" repository="_GdUesOlJEeWVPqzecXkBbg" id="_GdZ-ROlJEeWVPqzecXkBbg"/>
+    <outputPorts name="messageTraces" id="_GdZ-RelJEeWVPqzecXkBbg"/>
+    <outputPorts name="executionTraces" id="_GdZ-RulJEeWVPqzecXkBbg"/>
+    <outputPorts name="invalidExecutionTraces" id="_GdZ-R-lJEeWVPqzecXkBbg"/>
+    <inputPorts name="executions" id="_GdZ-SOlJEeWVPqzecXkBbg"/>
+  </plugins>
+  <plugins xsi:type="Filter" name="Trace reconstruction (trace event records -> event record traces)" classname="kieker.analysis.plugin.filter.flow.EventRecordTraceReconstructionFilter" id="_GdZ-SelJEeWVPqzecXkBbg">
+    <properties name="timeunit" value="NANOSECONDS"/>
+    <properties name="maxTraceTimeout" value="9223372036854775807"/>
+    <properties name="repairEventBasedTraces" value="false"/>
+    <properties name="maxTraceDuration" value="600000000000"/>
+    <outputPorts name="validTraces" id="_GdZ-SulJEeWVPqzecXkBbg" subscribers="_GdalUOlJEeWVPqzecXkBbg _GdalV-lJEeWVPqzecXkBbg"/>
+    <outputPorts name="invalidTraces" id="_GdZ-S-lJEeWVPqzecXkBbg" subscribers="_GdalUelJEeWVPqzecXkBbg"/>
+    <inputPorts name="traceRecords" id="_GdZ-TOlJEeWVPqzecXkBbg"/>
+    <inputPorts name="timestamps" id="_GdZ-TelJEeWVPqzecXkBbg"/>
+    <inputPorts name="traceEventRecords" id="_GdZ-TulJEeWVPqzecXkBbg"/>
+  </plugins>
+  <plugins xsi:type="Filter" name="Trace reconstruction (event records -> event record traces)" classname="kieker.tools.traceAnalysis.filter.flow.EventRecordTraceCounter" id="_GdZ-T-lJEeWVPqzecXkBbg">
+    <properties name="logInvalidTraces" value="true"/>
+    <inputPorts name="validEventRecordTraces" id="_GdalUOlJEeWVPqzecXkBbg"/>
+    <inputPorts name="invalidEventRecordTraces" id="_GdalUelJEeWVPqzecXkBbg"/>
+  </plugins>
+  <plugins xsi:type="Filter" name="Trace reconstruction (event record traces -> execution traces)" classname="kieker.tools.traceAnalysis.filter.flow.TraceEventRecords2ExecutionAndMessageTraceFilter" id="_GdalUulJEeWVPqzecXkBbg">
+    <properties name="enhanceJavaConstructors" value="true"/>
+    <properties name="enhanceCallDetection" value="true"/>
+    <properties name="ignoreAssumed" value="false"/>
+    <repositories name="systemModelRepository" repository="_GdUesOlJEeWVPqzecXkBbg" id="_GdalU-lJEeWVPqzecXkBbg"/>
+    <outputPorts name="executionTrace" id="_GdalVOlJEeWVPqzecXkBbg"/>
+    <outputPorts name="messageTrace" id="_GdalVelJEeWVPqzecXkBbg"/>
+    <outputPorts name="invalidTrace" id="_GdalVulJEeWVPqzecXkBbg"/>
+    <inputPorts name="traceEvents" id="_GdalV-lJEeWVPqzecXkBbg"/>
+  </plugins>
+  <plugins xsi:type="Filter" name="SystemModel2FileFilter-6" classname="kieker.tools.traceAnalysis.filter.systemModel.SystemModel2FileFilter" id="_GdalWOlJEeWVPqzecXkBbg">
+    <properties name="outputFnHtml" value="C:/Users/Jürgen/git/pmx/tools.descartes.pmx.test/testFiles/kiekerTeetimeData/bookstore-logs/system-entities.html"/>
+    <repositories name="systemModelRepository" repository="_GdUesOlJEeWVPqzecXkBbg" id="_GdalWelJEeWVPqzecXkBbg"/>
+  </plugins>
+  <repositories classname="kieker.tools.traceAnalysis.systemModel.repository.SystemModelRepository" id="_GdUesOlJEeWVPqzecXkBbg"/>
+</Project>
