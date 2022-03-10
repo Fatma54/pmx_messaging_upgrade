@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<monitorrepository:MonitorRepository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:metricspec="http://palladiosimulator.org/MetricSpec/1.0" xmlns:monitorrepository="http://palladiosimulator.org/MonitorRepository/1.0" xmlns:pcmmeasuringpoint="http://palladiosimulator.org/PCM/MeasuringPoint/1.0" id="_0ea04a34532c4aafa3afc2252b0aca07">
+    <monitors id="_2819ee279cb24f12a0ba09d9b55ec2a2" entityName="ActiveResourceMonitor">
+        <measurementSpecifications id="_a60085b07b364c34b91e0665a5a3e4de">
+            <metricDescription xsi:type="metricspec:NumericalBaseMetricDescription" href="pathmap://METRIC_SPEC_MODELS/commonMetrics.metricspec#_paDhIs7qEeOX_4BzImuHbA"/>
+            <processingType id="_4af2e4ed5bfd435da860d2a5f822dca1" xsi:type="monitorrepository:FeedThrough"/>
+        </measurementSpecifications>
+        <measurementSpecifications id="_dea5e56cd6114f639cdc4cf89bd444eb">
+            <metricDescription xsi:type="metricspec:NumericalBaseMetricDescription" href="pathmap://METRIC_SPEC_MODELS/commonMetrics.metricspec#_eg_F0s7qEeOX_4BzImuHbA"/>
+            <processingType id="_596d305b06e444e7b355d9c2247f6b11" xsi:type="monitorrepository:FeedThrough"/>
+        </measurementSpecifications>
+        <measuringPoint xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" href="measuring.measuringpoint#//@measuringPoints.0"/>
+    </monitors>
+    <monitors id="_bcd92490943042dfa6fa4409eb7e93a3" entityName="ActiveResourceMonitor">
+        <measurementSpecifications id="_1684c4c55ab24bbaa860f9351b3cdc7f">
+            <metricDescription xsi:type="metricspec:NumericalBaseMetricDescription" href="pathmap://METRIC_SPEC_MODELS/commonMetrics.metricspec#_paDhIs7qEeOX_4BzImuHbA"/>
+            <processingType id="_fd1e55e6310549f3a0a735ed4af91dd7" xsi:type="monitorrepository:FeedThrough"/>
+        </measurementSpecifications>
+        <measurementSpecifications id="_015d7c0351f0403886b68faf931d84a4">
+            <metricDescription xsi:type="metricspec:NumericalBaseMetricDescription" href="pathmap://METRIC_SPEC_MODELS/commonMetrics.metricspec#_eg_F0s7qEeOX_4BzImuHbA"/>
+            <processingType id="_f7720f4e856949dd99c9a45052eea57a" xsi:type="monitorrepository:FeedThrough"/>
+        </measurementSpecifications>
+        <measuringPoint xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" href="measuring.measuringpoint#//@measuringPoints.1"/>
+    </monitors>
+    <monitors id="_db71e5f48b8b414b9b316a9bcb19da3b" entityName="ActiveResourceMonitor">
+        <measurementSpecifications id="_d9ae303afe4d489c9d39cd3f5a8c493d">
+            <metricDescription xsi:type="metricspec:NumericalBaseMetricDescription" href="pathmap://METRIC_SPEC_MODELS/commonMetrics.metricspec#_paDhIs7qEeOX_4BzImuHbA"/>
+            <processingType id="_16a348d6ff38489d8a7d60fa5f2042df" xsi:type="monitorrepository:FeedThrough"/>
+        </measurementSpecifications>
+        <measurementSpecifications id="_30908a26f1aa42b8b964eb6cb97ea337">
+            <metricDescription xsi:type="metricspec:NumericalBaseMetricDescription" href="pathmap://METRIC_SPEC_MODELS/commonMetrics.metricspec#_eg_F0s7qEeOX_4BzImuHbA"/>
+            <processingType id="_176136897ac8418d9465f04fc1aa9b77" xsi:type="monitorrepository:FeedThrough"/>
+        </measurementSpecifications>
+        <measuringPoint xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" href="measuring.measuringpoint#//@measuringPoints.2"/>
+    </monitors>
+    <monitors id="_950442004781410a9eec65ea7491d4f9" entityName="ActiveResourceMonitor">
+        <measurementSpecifications id="_6e6c08ad310a4040883c792aac8911fb">
+            <metricDescription xsi:type="metricspec:NumericalBaseMetricDescription" href="pathmap://METRIC_SPEC_MODELS/commonMetrics.metricspec#_paDhIs7qEeOX_4BzImuHbA"/>
+            <processingType id="_0b0ba72c29e34b998d7cc413b69f064a" xsi:type="monitorrepository:FeedThrough"/>
+        </measurementSpecifications>
+        <measurementSpecifications id="_9c72e8dc67a249d880251e474d3da1d2">
+            <metricDescription xsi:type="metricspec:NumericalBaseMetricDescription" href="pathmap://METRIC_SPEC_MODELS/commonMetrics.metricspec#_eg_F0s7qEeOX_4BzImuHbA"/>
+            <processingType id="_cd1a6a67f8204f72b924d4b9469b59b8" xsi:type="monitorrepository:FeedThrough"/>
+        </measurementSpecifications>
+        <measuringPoint xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" href="measuring.measuringpoint#//@measuringPoints.3"/>
+    </monitors>
+    <monitors id="_72f93b7cccd447228b4fe55f6d539dce" entityName="UsageScenarioMonitor">
+        <measurementSpecifications id="_09e0d75ba8154b4bb6da1f64a031276e">
+            <metricDescription xsi:type="metricspec:NumericalBaseMetricDescription" href="pathmap://METRIC_SPEC_MODELS/commonMetrics.metricspec#_6rYmYs7nEeOX_4BzImuHbA"/>
+            <processingType id="_50af5762921147d4adb0b9abb4ea2657" xsi:type="monitorrepository:FeedThrough"/>
+        </measurementSpecifications>
+        <measuringPoint xsi:type="pcmmeasuringpoint:UsageScenarioMeasuringPoint" href="measuring.measuringpoint#//@measuringPoints.4"/>
+    </monitors>
+</monitorrepository:MonitorRepository>

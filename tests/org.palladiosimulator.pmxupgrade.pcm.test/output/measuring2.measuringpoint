@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<org.palladiosimulator.edp2.models:MeasuringPointRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.palladiosimulator.edp2.models="http://palladiosimulator.org/EDP2/MeasuringPoint/1.0" xmlns:pcmmeasuringpoint="http://palladiosimulator.org/PCM/MeasuringPoint/1.0" id="_a42708fbb80d464a9d4f531ed4d3f90c">
+    <measuringPoints xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" stringRepresentation="ML-DATA-INPUT-SRV, CPU" resourceURIRepresentation="extracted.resourceenvironment#_0W5soKCcEeylBpzHcxTtuQ">
+        <activeResource href="extracted.resourceenvironment#_0W5soKCcEeylBpzHcxTtuQ"/>
+    </measuringPoints>
+    <measuringPoints xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" stringRepresentation="KSTREAMONLINEPREDICTIONS-SRV, CPU" resourceURIRepresentation="extracted.resourceenvironment#_1I-p0aCcEeylBpzHcxTtuQ">
+        <activeResource href="extracted.resourceenvironment#_1I-p0aCcEeylBpzHcxTtuQ"/>
+    </measuringPoints>
+    <measuringPoints xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" stringRepresentation="RAW-AIRLINE-DATA-SRV, CPU" resourceURIRepresentation="extracted.resourceenvironment#_1I_Q4aCcEeylBpzHcxTtuQ">
+        <activeResource href="extracted.resourceenvironment#_1I_Q4aCcEeylBpzHcxTtuQ"/>
+    </measuringPoints>
+    <measuringPoints xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" stringRepresentation="DATAPRODUCER-SRV, CPU" resourceURIRepresentation="extracted.resourceenvironment#_1I_38aCcEeylBpzHcxTtuQ">
+        <activeResource href="extracted.resourceenvironment#_1I_38aCcEeylBpzHcxTtuQ"/>
+    </measuringPoints>
+    <measuringPoints xsi:type="pcmmeasuringpoint:UsageScenarioMeasuringPoint" stringRepresentation="Usage Scenario: usageScenario" resourceURIRepresentation="extracted.usagemodel#usageScenario">
+        <usageScenario href="extracted.usagemodel#usageScenario"/>
+    </measuringPoints>
+</org.palladiosimulator.edp2.models:MeasuringPointRepository>

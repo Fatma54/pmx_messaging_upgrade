@@ -1,0 +1,92 @@
+INFO - Output directory: C:\Users\fatma\OneDrive\Desktop\Studium\SS21\BA_KASTEL\paper\pmx_messaging_upgrade\tests\org.palladiosimulator.pmxupgrade.pcm.test\output
+INFO - received workload
+INFO - received operation graph
+INFO - received resource demands
+INFO - starting model creation
+INFO - could not find number of cores for ML-DATA-INPUT-SRV
+INFO - assumed numberOfCores = 2
+INFO - could not find number of cores for KSTREAMONLINEPREDICTIONS-SRV
+INFO - assumed numberOfCores = 2
+INFO - could not find number of cores for RAW-AIRLINE-DATA-SRV
+INFO - assumed numberOfCores = 2
+INFO - could not find number of cores for DATAPRODUCER-SRV
+INFO - assumed numberOfCores = 2
+INFO - 	DATAPRODUCER-SRV DataProducer send 1x called externally
+ERROR - requested component [raw-airline-data] has not been created
+ERROR - [KStreamOnlinePredictions, DataProducer]
+ERROR - requested component [raw-airline-data] has not been created
+ERROR - [KStreamOnlinePredictions, DataProducer]
+WARN - 		No resource demand found for DataProducer#send#DATAPRODUCER-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forDataProducersend
+ERROR - requested component [raw-airline-data] has not been created
+ERROR - [KStreamOnlinePredictions, DataProducer]
+INFO - 	RAW-AIRLINE-DATA-SRV raw-airline-data receive 1x called externally
+WARN - 		No resource demand found for raw-airline-data#receive#RAW-AIRLINE-DATA-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forraw-airline-datareceive
+ERROR - requested component [raw-airline-data] has not been created
+ERROR - [KStreamOnlinePredictions, DataProducer]
+INFO - 	RAW-AIRLINE-DATA-SRV raw-airline-data send 1x called externally
+ERROR - requested component [raw-airline-data] has not been created
+ERROR - [KStreamOnlinePredictions, DataProducer]
+ERROR - requested component [raw-airline-data] has not been created
+ERROR - [KStreamOnlinePredictions, DataProducer]
+WARN - 		No resource demand found for raw-airline-data#send#RAW-AIRLINE-DATA-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forraw-airline-datasend
+INFO - 	KSTREAMONLINEPREDICTIONS-SRV KStreamOnlinePredictions receive 1x called externally
+WARN - 		No resource demand found for KStreamOnlinePredictions#receive#KSTREAMONLINEPREDICTIONS-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forKStreamOnlinePredictionsreceive
+INFO - 	DATAPRODUCER-SRV DataProducer send 1x called externally
+ERROR - requested component [ml-data-input] has not been created
+ERROR - [KStreamOnlinePredictions, DataProducer]
+ERROR - requested component [ml-data-input] has not been created
+ERROR - [KStreamOnlinePredictions, DataProducer]
+WARN - 		No resource demand found for DataProducer#send#DATAPRODUCER-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forDataProducersend
+ERROR - requested component [ml-data-input] has not been created
+ERROR - [KStreamOnlinePredictions, DataProducer]
+INFO - 	ML-DATA-INPUT-SRV ml-data-input receive 1x called externally
+WARN - 		No resource demand found for ml-data-input#receive#ML-DATA-INPUT-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forml-data-inputreceive
+ERROR - requested component [ml-data-input] has not been created
+ERROR - [KStreamOnlinePredictions, DataProducer]
+INFO - 	ML-DATA-INPUT-SRV ml-data-input send 1x called externally
+ERROR - requested component [ml-data-input] has not been created
+ERROR - [KStreamOnlinePredictions, DataProducer]
+ERROR - requested component [ml-data-input] has not been created
+ERROR - [KStreamOnlinePredictions, DataProducer]
+WARN - 		No resource demand found for ml-data-input#send#ML-DATA-INPUT-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forml-data-inputsend
+INFO - 	KSTREAMONLINEPREDICTIONS-SRV KStreamOnlinePredictions receive 1x called externally
+WARN - 		No resource demand found for KStreamOnlinePredictions#receive#KSTREAMONLINEPREDICTIONS-SRV
+INFO - {}
+INFO - 		resource demand has been set to 0.0
+INFO - Try to create behavior description forKStreamOnlinePredictionsreceive
+INFO - Stored workload (output/\workloads\send_empiricaldist.csv)
+INFO - [DataProducer]
+INFO - send#DataProducer#DATAPRODUCER-SRV 2
+INFO - ==>2.0 1.64621766557378406E18
+INFO -  === durartion === 0.003981824
+INFO -  === message chain ===
+INFO - send#DataProducer#DATAPRODUCER-SRV
+ERROR - Could not find interface IDataProducer
+INFO - Available interfaces[]
+INFO - Complexity of extracted models: #elements 78 #references 79
+INFO - saved extracted.system --> (path: C:/Users/fatma/OneDrive/Desktop/Studium/SS21/BA_KASTEL/paper/pmx_messaging_upgrade/tests/org.palladiosimulator.pmxupgrade.pcm.test/output/extracted.system)
+INFO - saved extracted.repository --> (path: C:/Users/fatma/OneDrive/Desktop/Studium/SS21/BA_KASTEL/paper/pmx_messaging_upgrade/tests/org.palladiosimulator.pmxupgrade.pcm.test/output/extracted.repository)
+INFO - saved extracted.usagemodel --> (path: C:/Users/fatma/OneDrive/Desktop/Studium/SS21/BA_KASTEL/paper/pmx_messaging_upgrade/tests/org.palladiosimulator.pmxupgrade.pcm.test/output/extracted.usagemodel)
+INFO - saved extracted.allocation --> (path: C:/Users/fatma/OneDrive/Desktop/Studium/SS21/BA_KASTEL/paper/pmx_messaging_upgrade/tests/org.palladiosimulator.pmxupgrade.pcm.test/output/extracted.allocation)
+INFO - saved extracted.resourcerepository --> (path: C:/Users/fatma/OneDrive/Desktop/Studium/SS21/BA_KASTEL/paper/pmx_messaging_upgrade/tests/org.palladiosimulator.pmxupgrade.pcm.test/output/extracted.resourcerepository)
