@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<org.palladiosimulator.edp2.models:MeasuringPointRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.palladiosimulator.edp2.models="http://palladiosimulator.org/EDP2/MeasuringPoint/1.0" xmlns:pcmmeasuringpoint="http://palladiosimulator.org/PCM/MeasuringPoint/1.0" id="_6b50c6e30cdc422785629360fb2ae5fd">
-    <measuringPoints xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" stringRepresentation="PAYMENT-SRV, CPU" resourceURIRepresentation="extracted.resourceenvironment#_zNovcJ-UEeyZLK0VRfB6xA">
-        <activeResource href="extracted.resourceenvironment#_zNovcJ-UEeyZLK0VRfB6xA"/>
+<org.palladiosimulator.edp2.models:MeasuringPointRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.palladiosimulator.edp2.models="http://palladiosimulator.org/EDP2/MeasuringPoint/1.0" xmlns:pcmmeasuringpoint="http://palladiosimulator.org/PCM/MeasuringPoint/1.0" id="_37f808b680884d0bb60249bf32bec433">
+    <measuringPoints xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" stringRepresentation="ML-DATA-INPUT-SRV, CPU" resourceURIRepresentation="extracted.resourceenvironment#_4VPuUKCYEeyR2d7Don3bEA">
+        <activeResource href="extracted.resourceenvironment#_4VPuUKCYEeyR2d7Don3bEA"/>
     </measuringPoints>
-    <measuringPoints xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" stringRepresentation="INVENTORY-SRV, CPU" resourceURIRepresentation="extracted.resourceenvironment#_0GuTkJ-UEeyZLK0VRfB6xA">
-        <activeResource href="extracted.resourceenvironment#_0GuTkJ-UEeyZLK0VRfB6xA"/>
+    <measuringPoints xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" stringRepresentation="KSTREAMONLINEPREDICTIONS-SRV, CPU" resourceURIRepresentation="extracted.resourceenvironment#_5DgigaCYEeyR2d7Don3bEA">
+        <activeResource href="extracted.resourceenvironment#_5DgigaCYEeyR2d7Don3bEA"/>
     </measuringPoints>
-    <measuringPoints xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" stringRepresentation="CHECKOUT-SRV, CPU" resourceURIRepresentation="extracted.resourceenvironment#_0Gu6oJ-UEeyZLK0VRfB6xA">
-        <activeResource href="extracted.resourceenvironment#_0Gu6oJ-UEeyZLK0VRfB6xA"/>
+    <measuringPoints xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" stringRepresentation="RAW-AIRLINE-DATA-SRV, CPU" resourceURIRepresentation="extracted.resourceenvironment#_5DhwoKCYEeyR2d7Don3bEA">
+        <activeResource href="extracted.resourceenvironment#_5DhwoKCYEeyR2d7Don3bEA"/>
     </measuringPoints>
-    <measuringPoints xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" stringRepresentation="SHIPPING-SRV, CPU" resourceURIRepresentation="extracted.resourceenvironment#_0GwIwZ-UEeyZLK0VRfB6xA">
-        <activeResource href="extracted.resourceenvironment#_0GwIwZ-UEeyZLK0VRfB6xA"/>
-    </measuringPoints>
-    <measuringPoints xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" stringRepresentation="FLOWING-RETAIL-SRV, CPU" resourceURIRepresentation="extracted.resourceenvironment#_0Gwv0Z-UEeyZLK0VRfB6xA">
-        <activeResource href="extracted.resourceenvironment#_0Gwv0Z-UEeyZLK0VRfB6xA"/>
-    </measuringPoints>
-    <measuringPoints xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" stringRepresentation="MONITOR-SRV, CPU" resourceURIRepresentation="extracted.resourceenvironment#_0Gx98J-UEeyZLK0VRfB6xA">
-        <activeResource href="extracted.resourceenvironment#_0Gx98J-UEeyZLK0VRfB6xA"/>
-    </measuringPoints>
-    <measuringPoints xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" stringRepresentation="ORDER-CAMUNDA-SRV, CPU" resourceURIRepresentation="extracted.resourceenvironment#_0GylAZ-UEeyZLK0VRfB6xA">
-        <activeResource href="extracted.resourceenvironment#_0GylAZ-UEeyZLK0VRfB6xA"/>
+    <measuringPoints xsi:type="pcmmeasuringpoint:ActiveResourceMeasuringPoint" stringRepresentation="DATAPRODUCER-SRV, CPU" resourceURIRepresentation="extracted.resourceenvironment#_5DiXsaCYEeyR2d7Don3bEA">
+        <activeResource href="extracted.resourceenvironment#_5DiXsaCYEeyR2d7Don3bEA"/>
     </measuringPoints>
     <measuringPoints xsi:type="pcmmeasuringpoint:UsageScenarioMeasuringPoint" stringRepresentation="Usage Scenario: usageScenario" resourceURIRepresentation="extracted.usagemodel#usageScenario">
         <usageScenario href="extracted.usagemodel#usageScenario"/>

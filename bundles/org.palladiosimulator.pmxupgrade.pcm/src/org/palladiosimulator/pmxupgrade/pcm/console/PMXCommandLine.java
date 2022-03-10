@@ -92,8 +92,8 @@ public class PMXCommandLine {
 
             configuration.setNumCores(getNumberOfCores());
             //configuration.setInputFileName("resources/json/combination.json");
-            //configuration.setInputFileName("resources/json/streams-online-inferencing-tracing.json"); //1. use case ~fat
-            configuration.setInputFileName("resources/json/traceWithoutCamundaOptimizeIngest.json"); //2. use case~fat
+            configuration.setInputFileName("resources/json/streams-online-inferencing-tracing.json"); //1. use case ~fat
+            //configuration.setInputFileName("resources/json/traceWithoutCamundaOptimizeIngest.json"); //2. use case~fat
 
             configuration.setOutputDirectory(outputDir);
 
