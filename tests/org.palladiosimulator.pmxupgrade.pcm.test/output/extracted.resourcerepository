@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resourcetype:ResourceRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:resourcetype="http://palladiosimulator.org/PalladioComponentModel/ResourceType/5.2">
-  <schedulingPolicies__ResourceRepository id="_4LYnsKCYEeyR2d7Don3bEA" entityName="SCHEDULING_POLICY"/>
-  <availableResourceTypes_ResourceRepository xsi:type="resourcetype:ProcessingResourceType" id="_4LKlQKCYEeyR2d7Don3bEA" entityName="CPU"/>
-  <availableResourceTypes_ResourceRepository xsi:type="resourcetype:CommunicationLinkResourceType" id="_4LUWQKCYEeyR2d7Don3bEA" entityName="LAN"/>
-</resourcetype:ResourceRepository>
